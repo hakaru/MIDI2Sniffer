@@ -14,6 +14,9 @@ public actor MIDISnifferEngine {
     // sourceID → [destinationID] lookup for routing
     private var routeTable: [UInt32: [UInt32]] = [:]
 
+    // sourceID.value → name cache (updated on setupChanged / refreshSources)
+    private var sourceNameCache: [UInt32: String] = [:]
+
     public init(
         onMessage: @escaping @Sendable (CapturedMessage) -> Void,
         onSourcesUpdated: @escaping @Sendable ([MIDISourceInfo]) -> Void,
@@ -36,8 +39,7 @@ public actor MIDISnifferEngine {
                 let sourceName = await self.sourceNameFor(received.sourceID)
                 let message = MessageDecoder.decode(
                     data: received.data,
-                    umpWord1: received.umpWord1,
-                    umpWord2: received.umpWord2,
+                    umpWords: received.umpWords,
                     sourceName: sourceName,
                     sourceID: received.sourceID?.value
                 )
@@ -95,11 +97,8 @@ public actor MIDISnifferEngine {
 
         for destID in destinations {
             let dest = MIDIDestinationID(destID)
-            if received.umpWord1 != 0 {
-                try? await t.sendUMP(
-                    [received.umpWord1, received.umpWord2],
-                    to: dest
-                )
+            if !received.umpWords.isEmpty {
+                try? await t.sendUMP(received.umpWords, to: dest)
             } else {
                 try? await t.send(received.data, to: dest)
             }
@@ -111,6 +110,11 @@ public actor MIDISnifferEngine {
     private func refreshSources() async {
         guard let t = transport else { return }
         let sources = await t.sources
+        var cache: [UInt32: String] = [:]
+        for s in sources {
+            cache[s.sourceID.value] = s.name
+        }
+        sourceNameCache = cache
         sourceUpdateHandler(sources)
     }
 
@@ -120,9 +124,8 @@ public actor MIDISnifferEngine {
         destinationUpdateHandler(destinations)
     }
 
-    private func sourceNameFor(_ sourceID: MIDISourceID?) async -> String {
-        guard let sid = sourceID, let t = transport else { return "Unknown" }
-        let sources = await t.sources
-        return sources.first(where: { $0.sourceID == sid })?.name ?? "Source \(sid.value)"
+    private func sourceNameFor(_ sourceID: MIDISourceID?) -> String {
+        guard let sid = sourceID else { return "Unknown" }
+        return sourceNameCache[sid.value] ?? "Source \(sid.value)"
     }
 }

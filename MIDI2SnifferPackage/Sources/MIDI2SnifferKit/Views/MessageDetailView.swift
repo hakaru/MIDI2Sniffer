@@ -45,12 +45,12 @@ struct MessageDetailView: View {
                         .textSelection(.enabled)
 
                     // UMP words
-                    if msg.umpWord1 != 0 {
+                    if !msg.umpWords.isEmpty {
                         Divider()
                         Text("UMP Words")
                             .font(.caption)
                             .foregroundStyle(.secondary)
-                        Text(String(format: "W1: 0x%08X  W2: 0x%08X", msg.umpWord1, msg.umpWord2))
+                        Text(msg.umpWords.enumerated().map { "W\($0.offset + 1): 0x\(String(format: "%08X", $0.element))" }.joined(separator: "  "))
                             .font(.system(.caption, design: .monospaced))
                             .textSelection(.enabled)
                     }

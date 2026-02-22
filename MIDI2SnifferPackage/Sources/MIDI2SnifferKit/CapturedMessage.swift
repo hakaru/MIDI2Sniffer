@@ -9,8 +9,7 @@ public struct CapturedMessage: Identifiable, Sendable {
     public let sourceID: UInt32?
     public let sourceName: String
     public let rawData: [UInt8]
-    public let umpWord1: UInt32
-    public let umpWord2: UInt32
+    public let umpWords: [UInt32]
     public let decoded: DecodedMessage
 
     public init(
@@ -19,8 +18,7 @@ public struct CapturedMessage: Identifiable, Sendable {
         sourceID: UInt32? = nil,
         sourceName: String,
         rawData: [UInt8],
-        umpWord1: UInt32 = 0,
-        umpWord2: UInt32 = 0,
+        umpWords: [UInt32] = [],
         decoded: DecodedMessage
     ) {
         self.id = UUID()
@@ -29,8 +27,7 @@ public struct CapturedMessage: Identifiable, Sendable {
         self.sourceID = sourceID
         self.sourceName = sourceName
         self.rawData = rawData
-        self.umpWord1 = umpWord1
-        self.umpWord2 = umpWord2
+        self.umpWords = umpWords
         self.decoded = decoded
     }
 }
@@ -80,6 +77,11 @@ public enum DecodedMessage: Sendable {
     case peSubscribe(srcMUID: String, dstMUID: String, resource: String?, command: String?)
     case peSubscribeReply(srcMUID: String, dstMUID: String, subscribeId: String?)
     case peNotify(srcMUID: String, dstMUID: String, resource: String?, bodyJSON: String, subscribeId: String?)
+
+    // 128-bit UMP messages
+    case data128(hex: String)
+    case flexData(hex: String)
+    case umpStream(hex: String)
 
     // System/Other
     case sysEx(bytes: Int)
@@ -142,6 +144,12 @@ public enum DecodedMessage: Sendable {
             return "PE SubscribeReply \(src)->\(dst) subId=\(subId ?? "?")"
         case .peNotify(let src, let dst, let res, _, let subId):
             return "PE Notify \(src)->\(dst) \(res ?? "?") subId=\(subId ?? "?")"
+        case .data128(let hex):
+            return "Data128 \(hex)"
+        case .flexData(let hex):
+            return "FlexData \(hex)"
+        case .umpStream(let hex):
+            return "UMP Stream \(hex)"
         case .sysEx(let n):
             return "SysEx (\(n) bytes)"
         case .rawMIDI1(let st, let d1, let d2):
@@ -165,6 +173,7 @@ public enum DecodedMessage: Sendable {
              .peGetInquiry, .peGetReply, .peSetInquiry, .peSetReply,
              .peSubscribe, .peSubscribeReply, .peNotify:
             return .pe
+        case .data128, .flexData, .umpStream: return .system
         case .sysEx: return .system
         case .rawMIDI1, .unknown: return .unknown
         }

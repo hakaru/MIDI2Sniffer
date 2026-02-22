@@ -9,8 +9,7 @@ public enum MessageDecoder: Sendable {
 
     public static func decode(
         data: [UInt8],
-        umpWord1: UInt32,
-        umpWord2: UInt32,
+        umpWords: [UInt32],
         sourceName: String,
         sourceID: UInt32?
     ) -> CapturedMessage {
@@ -18,8 +17,8 @@ public enum MessageDecoder: Sendable {
 
         if isCISysEx(data) {
             decoded = decodeCIMessage(data)
-        } else if umpWord1 != 0 {
-            decoded = decodeUMP(w1: umpWord1, w2: umpWord2)
+        } else if !umpWords.isEmpty {
+            decoded = decodeUMP(umpWords: umpWords)
         } else if let first = data.first, first >= 0x80 && first < 0xF0 {
             decoded = decodeRawMIDI1(data)
         } else if data.first == 0xF0 {
@@ -33,8 +32,7 @@ public enum MessageDecoder: Sendable {
             sourceID: sourceID,
             sourceName: sourceName,
             rawData: data,
-            umpWord1: umpWord1,
-            umpWord2: umpWord2,
+            umpWords: umpWords,
             decoded: decoded
         )
     }
@@ -47,19 +45,31 @@ public enum MessageDecoder: Sendable {
 
     // MARK: - UMP decode
 
-    private static func decodeUMP(w1: UInt32, w2: UInt32) -> DecodedMessage {
+    private static func decodeUMP(umpWords: [UInt32]) -> DecodedMessage {
+        guard let w1 = umpWords.first else { return .unknown(hex: "empty UMP") }
         let mt = (w1 >> 28) & 0xF
         let st = (w1 >> 20) & 0xF
         let ch = UInt8((w1 >> 16) & 0xF)
+        let w2 = umpWords.count > 1 ? umpWords[1] : UInt32(0)
 
-        if mt == 4 { // MIDI 2.0 Channel Voice
+        switch mt {
+        case 4: // MIDI 2.0 Channel Voice
             return decodeMIDI2ChannelVoice(st: st, ch: ch, w1: w1, w2: w2)
-        } else if mt == 2 { // MIDI 1.0 Channel Voice
+        case 2: // MIDI 1.0 Channel Voice
             return decodeMIDI1ChannelVoice(st: st, ch: ch, w1: w1)
+        case 0x5: // Data128 / SysEx8
+            let hex = umpWords.map { String(format: "%08X", $0) }.joined(separator: " ")
+            return .data128(hex: hex)
+        case 0xD: // Flex Data
+            let hex = umpWords.map { String(format: "%08X", $0) }.joined(separator: " ")
+            return .flexData(hex: hex)
+        case 0xF: // UMP Stream
+            let hex = umpWords.map { String(format: "%08X", $0) }.joined(separator: " ")
+            return .umpStream(hex: hex)
+        default:
+            let hex = umpWords.map { String(format: "%08X", $0) }.joined(separator: " ")
+            return .unknown(hex: "UMP mt=\(mt) \(hex)")
         }
-
-        let hex = String(format: "%08X %08X", w1, w2)
-        return .unknown(hex: "UMP mt=\(mt) \(hex)")
     }
 
     private static func decodeMIDI2ChannelVoice(st: UInt32, ch: UInt8, w1: UInt32, w2: UInt32) -> DecodedMessage {
