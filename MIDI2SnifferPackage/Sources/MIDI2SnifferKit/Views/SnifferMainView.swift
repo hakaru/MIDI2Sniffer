@@ -30,6 +30,7 @@ public struct SnifferMainView: View {
 
 struct SidebarView: View {
     @Bindable var state: SnifferState
+    @State private var showingAddRoute = false
 
     var body: some View {
         List {
@@ -54,6 +55,18 @@ struct SidebarView: View {
                         ))
                         .font(.callout)
                     }
+                }
+            }
+
+            Section("Routes") {
+                RouteListView(state: state)
+
+                Button("Add Route...") {
+                    showingAddRoute = true
+                }
+                .font(.caption)
+                .popover(isPresented: $showingAddRoute) {
+                    AddRouteView(state: state, isPresented: $showingAddRoute)
                 }
             }
 

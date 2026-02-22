@@ -13,6 +13,8 @@ public final class SnifferState {
     public var isCapturing = false
     public var selectedMessageID: UUID?
     public var availableSources: [SourceInfo] = []
+    public var availableDestinations: [DestinationInfo] = []
+    public var routes: [MIDIRoute] = []
     public var messageCount: Int = 0
     public var startTime: Date?
 
@@ -30,6 +32,18 @@ public final class SnifferState {
             self.name = name
             self.manufacturer = manufacturer
             self.isEnabled = isEnabled
+        }
+    }
+
+    public struct DestinationInfo: Identifiable, Sendable {
+        public let id: UInt32
+        public let name: String
+        public let manufacturer: String?
+
+        public init(id: UInt32, name: String, manufacturer: String?) {
+            self.id = id
+            self.name = name
+            self.manufacturer = manufacturer
         }
     }
 
@@ -57,6 +71,11 @@ public final class SnifferState {
             onSourcesUpdated: { [weak self] sources in
                 Task { @MainActor [weak self] in
                     self?.updateSources(sources)
+                }
+            },
+            onDestinationsUpdated: { [weak self] destinations in
+                Task { @MainActor [weak self] in
+                    self?.updateDestinations(destinations)
                 }
             }
         )
@@ -140,6 +159,62 @@ public final class SnifferState {
         let enabled = Set(availableSources.filter(\.isEnabled).map(\.name))
         filter.enabledSources = enabled
         refilter()
+    }
+
+    // MARK: - Destination management
+
+    private func updateDestinations(_ destinations: [MIDIDestinationInfo]) {
+        availableDestinations = destinations.map { d in
+            DestinationInfo(
+                id: d.destinationID.value,
+                name: d.name,
+                manufacturer: d.manufacturer
+            )
+        }
+        // Disable routes whose destination is no longer available
+        let availableIDs = Set(destinations.map(\.destinationID.value))
+        for i in routes.indices {
+            if !availableIDs.contains(routes[i].destinationID) {
+                routes[i].isEnabled = false
+            }
+        }
+        syncRoutesToEngine()
+    }
+
+    // MARK: - Route management
+
+    public func addRoute(sourceID: UInt32, destinationID: UInt32) {
+        guard let source = availableSources.first(where: { $0.id == sourceID }),
+              let dest = availableDestinations.first(where: { $0.id == destinationID }) else { return }
+        // Avoid duplicates
+        if routes.contains(where: { $0.sourceID == sourceID && $0.destinationID == destinationID }) { return }
+        let route = MIDIRoute(
+            sourceID: sourceID,
+            sourceName: source.name,
+            destinationID: destinationID,
+            destinationName: dest.name
+        )
+        routes.append(route)
+        syncRoutesToEngine()
+    }
+
+    public func removeRoute(_ id: UUID) {
+        routes.removeAll(where: { $0.id == id })
+        syncRoutesToEngine()
+    }
+
+    public func toggleRoute(_ id: UUID) {
+        if let idx = routes.firstIndex(where: { $0.id == id }) {
+            routes[idx].isEnabled.toggle()
+            syncRoutesToEngine()
+        }
+    }
+
+    private func syncRoutesToEngine() {
+        let currentRoutes = routes
+        Task {
+            await engine?.updateRoutes(currentRoutes)
+        }
     }
 
     // MARK: - Filter
