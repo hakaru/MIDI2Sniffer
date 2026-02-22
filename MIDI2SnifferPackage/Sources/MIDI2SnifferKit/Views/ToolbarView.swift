@@ -30,7 +30,7 @@ struct ToolbarView: ToolbarContent {
             .keyboardShortcut("k", modifiers: .command)
 
             Button {
-                exportToFile()
+                CaptureSession.exportToFile(messages: state.messages, startTime: state.startTime)
             } label: {
                 Label("Export", systemImage: "square.and.arrow.up")
             }
@@ -52,32 +52,5 @@ struct ToolbarView: ToolbarContent {
                     .foregroundStyle(.secondary)
             }
         }
-    }
-
-    private func exportToFile() {
-        #if canImport(AppKit)
-        guard let data = CaptureSession.export(messages: state.messages, startTime: state.startTime) else {
-            return
-        }
-
-        let panel = NSSavePanel()
-        panel.allowedContentTypes = [.json]
-        panel.nameFieldStringValue = "capture-\(formattedNow()).midi2sniff.json"
-        panel.canCreateDirectories = true
-
-        guard panel.runModal() == .OK, let url = panel.url else { return }
-
-        do {
-            try data.write(to: url, options: .atomic)
-        } catch {
-            print("Export failed: \(error)")
-        }
-        #endif
-    }
-
-    private func formattedNow() -> String {
-        let f = DateFormatter()
-        f.dateFormat = "yyyyMMdd-HHmmss"
-        return f.string(from: .now)
     }
 }

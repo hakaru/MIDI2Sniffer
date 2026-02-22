@@ -5,6 +5,17 @@ import MIDI2Kit
 
 public enum MessageDecoder: Sendable {
 
+    // MARK: - UMP Message Type constants
+
+    private enum UMPMessageType {
+        static let midi1ChannelVoice: UInt32 = 0x2
+        static let sysEx7: UInt32 = 0x3
+        static let midi2ChannelVoice: UInt32 = 0x4
+        static let data128: UInt32 = 0x5
+        static let flexData: UInt32 = 0xD
+        static let umpStream: UInt32 = 0xF
+    }
+
     // MARK: - Main entry point
 
     public static func decode(
@@ -53,17 +64,20 @@ public enum MessageDecoder: Sendable {
         let w2 = umpWords.count > 1 ? umpWords[1] : UInt32(0)
 
         switch mt {
-        case 4: // MIDI 2.0 Channel Voice
+        case UMPMessageType.midi2ChannelVoice:
             return decodeMIDI2ChannelVoice(st: st, ch: ch, w1: w1, w2: w2)
-        case 2: // MIDI 1.0 Channel Voice
-            return decodeMIDI1ChannelVoice(st: st, ch: ch, w1: w1)
-        case 0x5: // Data128 / SysEx8
+        case UMPMessageType.midi1ChannelVoice:
+            let statusByte = UInt8(0x80 | (st << 4) | UInt32(ch))
+            let d1 = UInt8((w1 >> 8) & 0x7F)
+            let d2 = UInt8(w1 & 0x7F)
+            return decodeRawMIDI1([statusByte, d1, d2])
+        case UMPMessageType.data128:
             let hex = umpWords.map { String(format: "%08X", $0) }.joined(separator: " ")
             return .data128(hex: hex)
-        case 0xD: // Flex Data
+        case UMPMessageType.flexData:
             let hex = umpWords.map { String(format: "%08X", $0) }.joined(separator: " ")
             return .flexData(hex: hex)
-        case 0xF: // UMP Stream
+        case UMPMessageType.umpStream:
             let hex = umpWords.map { String(format: "%08X", $0) }.joined(separator: " ")
             return .umpStream(hex: hex)
         default:
@@ -103,36 +117,6 @@ public enum MessageDecoder: Sendable {
         default:
             let hex = String(format: "%08X %08X", w1, w2)
             return .unknown(hex: "M2 st=0x\(String(format: "%X", st)) \(hex)")
-        }
-    }
-
-    private static func decodeMIDI1ChannelVoice(st: UInt32, ch: UInt8, w1: UInt32) -> DecodedMessage {
-        let d1 = UInt8((w1 >> 8) & 0x7F)
-        let d2 = UInt8(w1 & 0x7F)
-
-        switch st {
-        case 0x9:
-            let v16 = UInt16(d2) << 9
-            return .noteOn(ch: ch, note: d1, velocity16: v16, isMIDI2: false)
-        case 0x8:
-            return .noteOff(ch: ch, note: d1, isMIDI2: false)
-        case 0xB:
-            let v32 = UInt32(d2) << 25
-            return .controlChange(ch: ch, cc: d1, value32: v32, value7: d2, isMIDI2: false)
-        case 0xC:
-            return .programChange(ch: ch, program: d1, bank: nil, isMIDI2: false)
-        case 0xE:
-            let v14 = UInt16(d1) | (UInt16(d2) << 7)
-            let v32 = UInt32(v14) << 18
-            return .pitchBend(ch: ch, value32: v32, isMIDI2: false)
-        case 0xD:
-            let v32 = UInt32(d1) << 25
-            return .channelPressure(ch: ch, value32: v32, isMIDI2: false)
-        case 0xA:
-            let v32 = UInt32(d2) << 25
-            return .polyPressure(ch: ch, note: d1, value32: v32, isMIDI2: false)
-        default:
-            return .unknown(hex: String(format: "M1 st=0x%X %08X", st, w1))
         }
     }
 

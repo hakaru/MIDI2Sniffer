@@ -1,8 +1,17 @@
 // CaptureSession.swift — JSON export for captured sessions
 
 import Foundation
+#if canImport(AppKit)
+import AppKit
+#endif
 
 public struct CaptureSession: Sendable {
+
+    private static let filenameDateFormatter: DateFormatter = {
+        let f = DateFormatter()
+        f.dateFormat = "yyyyMMdd-HHmmss"
+        return f
+    }()
 
     public struct ExportData: Codable, Sendable {
         public let version: Int
@@ -35,6 +44,26 @@ public struct CaptureSession: Sendable {
             public let requestID: UInt8?
             public let subscribeId: String?
         }
+    }
+
+    @MainActor
+    public static func exportToFile(messages: [CapturedMessage], startTime: Date?) {
+        #if canImport(AppKit)
+        guard let data = export(messages: messages, startTime: startTime) else { return }
+
+        let panel = NSSavePanel()
+        panel.allowedContentTypes = [.json]
+        panel.nameFieldStringValue = "capture-\(filenameDateFormatter.string(from: .now)).midi2sniff.json"
+        panel.canCreateDirectories = true
+
+        guard panel.runModal() == .OK, let url = panel.url else { return }
+
+        do {
+            try data.write(to: url, options: .atomic)
+        } catch {
+            print("Export failed: \(error)")
+        }
+        #endif
     }
 
     public static func export(messages: [CapturedMessage], startTime: Date?) -> Data? {

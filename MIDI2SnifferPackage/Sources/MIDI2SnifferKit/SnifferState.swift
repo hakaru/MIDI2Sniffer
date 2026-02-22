@@ -56,6 +56,17 @@ public final class SnifferState {
 
     // MARK: - Engine lifecycle
 
+    private nonisolated func mainActorSend<T: Sendable>(
+        _ action: @MainActor @escaping (SnifferState, T) -> Void
+    ) -> @Sendable (T) -> Void {
+        { [weak self] value in
+            Task { @MainActor [weak self] in
+                guard let self else { return }
+                action(self, value)
+            }
+        }
+    }
+
     public func startCapture() {
         guard !isCapturing else { return }
         isCapturing = true
@@ -63,21 +74,9 @@ public final class SnifferState {
         startTime = .now
 
         let engine = MIDISnifferEngine(
-            onMessage: { [weak self] message in
-                Task { @MainActor [weak self] in
-                    self?.appendMessage(message)
-                }
-            },
-            onSourcesUpdated: { [weak self] sources in
-                Task { @MainActor [weak self] in
-                    self?.updateSources(sources)
-                }
-            },
-            onDestinationsUpdated: { [weak self] destinations in
-                Task { @MainActor [weak self] in
-                    self?.updateDestinations(destinations)
-                }
-            }
+            onMessage: mainActorSend { $0.appendMessage($1) },
+            onSourcesUpdated: mainActorSend { $0.updateSources($1) },
+            onDestinationsUpdated: mainActorSend { $0.updateDestinations($1) }
         )
         self.engine = engine
 
