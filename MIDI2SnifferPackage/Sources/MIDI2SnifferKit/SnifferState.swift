@@ -1,5 +1,6 @@
 // SnifferState.swift — Observable state for MIDI2Sniffer
 
+import DequeModule
 import Foundation
 import MIDI2Kit
 import Observation
@@ -7,8 +8,8 @@ import Observation
 @Observable
 @MainActor
 public final class SnifferState {
-    public var messages: [CapturedMessage] = []
-    public var filteredMessages: [CapturedMessage] = []
+    public var messages: Deque<CapturedMessage> = []
+    public var filteredMessages: Deque<CapturedMessage> = []
     public var filter = FilterConfig()
     public var isCapturing = false
     public var selectedMessageID: UUID?
@@ -21,6 +22,7 @@ public final class SnifferState {
     private var engine: MIDISnifferEngine?
     public var isScrollPaused = false
     private var refilterTask: Task<Void, Never>?
+    private var filteredCountAtRefilter: Int = 0
     private static let maxMessageCount = 100_000
     private static let batchRemoveCount = 10_000
 
@@ -246,14 +248,19 @@ public final class SnifferState {
 
     private func refilter() {
         refilterTask?.cancel()
-        let currentMessages = messages
+        let snapshot = messages
+        filteredCountAtRefilter = filteredMessages.count
         let currentFilter = filter
         refilterTask = Task.detached { [weak self] in
-            let filtered = currentMessages.filter { currentFilter.matches($0) }
+            let filtered = Deque(snapshot.filter { currentFilter.matches($0) })
             guard !Task.isCancelled else { return }
             await MainActor.run { [weak self] in
                 guard let self else { return }
+                // Preserve messages appended to filteredMessages since refilter started
+                let newCount = self.filteredMessages.count - self.filteredCountAtRefilter
+                let tail = newCount > 0 ? Array(self.filteredMessages.suffix(newCount)) : []
                 self.filteredMessages = filtered
+                self.filteredMessages.append(contentsOf: tail)
                 self.messageCount = self.messages.count
             }
         }
@@ -262,7 +269,7 @@ public final class SnifferState {
     // MARK: - Export
 
     public func prepareExportData() async -> Data? {
-        let msgs = filteredMessages
+        let msgs = Array(filteredMessages)
         let start = startTime
         return await Task.detached {
             CaptureSession.export(messages: msgs, startTime: start)
