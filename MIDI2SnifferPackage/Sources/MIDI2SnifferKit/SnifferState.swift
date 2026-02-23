@@ -22,6 +22,7 @@ public final class SnifferState {
     public var isScrollPaused = false
     private var refilterTask: Task<Void, Never>?
     private static let maxMessageCount = 100_000
+    private static let batchRemoveCount = 10_000
 
     public struct SourceInfo: Identifiable, Sendable {
         public let id: UInt32
@@ -125,8 +126,8 @@ public final class SnifferState {
 
     private func appendMessage(_ message: CapturedMessage) {
         messages.append(message)
-        if messages.count > Self.maxMessageCount {
-            messages.removeFirst(messages.count - Self.maxMessageCount)
+        if messages.count > Self.maxMessageCount + Self.batchRemoveCount {
+            messages.removeFirst(Self.batchRemoveCount)
             refilter()
             return
         }
