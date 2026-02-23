@@ -16,6 +16,7 @@ public final class SnifferState {
     public var availableSources: [SourceInfo] = []
     public var availableDestinations: [DestinationInfo] = []
     public var routes: [MIDIRoute] = []
+    public var routeMIDICI = false
     public var messageCount: Int = 0
     public var startTime: Date?
 
@@ -158,6 +159,7 @@ public final class SnifferState {
         if let idx = availableSources.firstIndex(where: { $0.id == id }) {
             availableSources[idx].isEnabled.toggle()
             updateEnabledSources()
+            syncEnabledSourcesToEngine()
         }
     }
 
@@ -166,12 +168,19 @@ public final class SnifferState {
             availableSources[i].isEnabled = enabled
         }
         updateEnabledSources()
+        syncEnabledSourcesToEngine()
     }
 
     private func updateEnabledSources() {
         let enabled = Set(availableSources.filter(\.isEnabled).map(\.name))
         filter.enabledSources = enabled
         refilter()
+    }
+
+    private func syncEnabledSourcesToEngine() {
+        let enabledIDs = Set(availableSources.filter(\.isEnabled).map(\.id))
+        let engine = self.engine
+        Task { await engine?.setEnabledSources(enabledIDs) }
     }
 
     // MARK: - Destination management
@@ -221,6 +230,12 @@ public final class SnifferState {
             routes[idx].isEnabled.toggle()
             syncRoutesToEngine()
         }
+    }
+
+    public func toggleRouteMIDICI() {
+        routeMIDICI.toggle()
+        let value = routeMIDICI
+        Task { await engine?.setRouteMIDICI(value) }
     }
 
     private func syncRoutesToEngine() {

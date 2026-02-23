@@ -72,6 +72,12 @@ struct SidebarView: View {
             Section("Routes") {
                 RouteListView(state: state)
 
+                Toggle("Route CI/PE", isOn: Binding(
+                    get: { state.routeMIDICI },
+                    set: { _ in state.toggleRouteMIDICI() }
+                ))
+                .font(.caption)
+
                 Button("Add Route...") {
                     showingAddRoute = true
                 }
