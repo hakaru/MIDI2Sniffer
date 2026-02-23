@@ -84,6 +84,7 @@ public enum DecodedMessage: Sendable {
     case umpStream(hex: String)
 
     // System/Other
+    case systemRealtime(status: UInt8, name: String)
     case sysEx(bytes: Int)
     case rawMIDI1(statusByte: UInt8, data1: UInt8, data2: UInt8)
     case unknown(hex: String)
@@ -150,6 +151,8 @@ public enum DecodedMessage: Sendable {
             return "FlexData \(hex)"
         case .umpStream(let hex):
             return "UMP Stream \(hex)"
+        case .systemRealtime(_, let name):
+            return name
         case .sysEx(let n):
             return "SysEx (\(n) bytes)"
         case .rawMIDI1(let st, let d1, let d2):
@@ -174,7 +177,7 @@ public enum DecodedMessage: Sendable {
              .peSubscribe, .peSubscribeReply, .peNotify:
             return .pe
         case .data128, .flexData, .umpStream: return .system
-        case .sysEx: return .system
+        case .systemRealtime, .sysEx: return .system
         case .rawMIDI1, .unknown: return .unknown
         }
     }

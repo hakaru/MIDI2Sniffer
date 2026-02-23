@@ -34,6 +34,8 @@ public enum MessageDecoder: Sendable {
             decoded = decodeRawMIDI1(data)
         } else if data.first == 0xF0 {
             decoded = .sysEx(bytes: data.count)
+        } else if let first = data.first, first >= 0xF1 {
+            decoded = decodeSystemRealtime(first)
         } else {
             let hex = data.prefix(16).map { String(format: "%02X", $0) }.joined(separator: " ")
             decoded = .unknown(hex: hex)
@@ -46,6 +48,26 @@ public enum MessageDecoder: Sendable {
             umpWords: umpWords,
             decoded: decoded
         )
+    }
+
+    // MARK: - System Common / Realtime decode
+
+    private static func decodeSystemRealtime(_ status: UInt8) -> DecodedMessage {
+        let name: String
+        switch status {
+        case 0xF1: name = "MTC Quarter Frame"
+        case 0xF2: name = "Song Position"
+        case 0xF3: name = "Song Select"
+        case 0xF6: name = "Tune Request"
+        case 0xF8: name = "Timing Clock"
+        case 0xFA: name = "Start"
+        case 0xFB: name = "Continue"
+        case 0xFC: name = "Stop"
+        case 0xFE: name = "Active Sensing"
+        case 0xFF: name = "System Reset"
+        default:   name = String(format: "System 0x%02X", status)
+        }
+        return .systemRealtime(status: status, name: name)
     }
 
     // MARK: - CI SysEx detection
