@@ -47,6 +47,18 @@ Sniffer 起動中に PE 通信をキャプチャすると、KeyStage の表示�
 - `KORG-Module-Pro-Limitations.md`: ResourceList 3チャンクでランダムにチャンク欠落（CoreMIDI 仮想ポートバッファリングの問題と推定）
 - 今回の USB 接続でも Reply 重複が発生 → BLE 固有の問題ではなく CoreMIDI レイヤーの問題
 
+**Sniffer コード調査結果（2026-02-23）:**
+- MIDISnifferEngine は CIManager を作成していない（MIDI2Client 未使用）
+- Discovery Inquiry の送信コードは存在しない。仮想エンドポイントも非作成
+- `MIDIInputPortCreateWithProtocol(._2_0)` は受信フォーマット指定のみで MIDI-CI 自動開始はしない
+- **結論: Sniffer のコードは MIDI-CI に一切関与していない**
+- 謎の MUID `0xC3C9C81` は macOS CoreMIDI が OS レベルで自動開始した MIDI-CI セッションの可能性が高い
+
+**次の切り分けテスト:**
+1. Sniffer を起動せず Mac に KeyStage だけ USB 接続 → Module 使用 → macOS CoreMIDI の存在だけで発生するか
+2. iOS 版 Sniffer を作成し iPhone 上で Module + Sniffer → KeyStage → iOS CoreMIDI でも発生するか
+3. 上記で macOS 固有と確定すれば、macOS CoreMIDI の MIDI-CI 自動処理を無効化する方法を調査
+
 ### キャプチャデータ
 
 | ファイル | 内容 |
