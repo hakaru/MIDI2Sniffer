@@ -1,9 +1,12 @@
 // SnifferMainView.swift — 3-pane NavigationSplitView layout
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 public struct SnifferMainView: View {
     @State var state = SnifferState()
+    @State private var isExporting = false
+    @State private var exportDocument: CaptureDocument?
 
     public init() {}
 
@@ -19,7 +22,15 @@ public struct SnifferMainView: View {
                 .navigationSplitViewColumnWidth(min: 300, ideal: 400)
         }
         .toolbar {
-            ToolbarView(state: state)
+            ToolbarView(state: state, isExporting: $isExporting, exportDocument: $exportDocument)
+        }
+        .fileExporter(
+            isPresented: $isExporting,
+            document: exportDocument,
+            contentType: .json,
+            defaultFilename: "capture.midi2sniff.json"
+        ) { _ in
+            exportDocument = nil
         }
         .navigationTitle("MIDI2Sniffer")
         .onAppear {

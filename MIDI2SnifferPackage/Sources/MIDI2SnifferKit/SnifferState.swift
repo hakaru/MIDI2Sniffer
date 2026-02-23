@@ -19,7 +19,9 @@ public final class SnifferState {
     public var startTime: Date?
 
     private var engine: MIDISnifferEngine?
-    private var isPaused = false
+    public var isScrollPaused = false
+    private var refilterTask: Task<Void, Never>?
+    private static let maxMessageCount = 100_000
 
     public struct SourceInfo: Identifiable, Sendable {
         public let id: UInt32
@@ -70,7 +72,7 @@ public final class SnifferState {
     public func startCapture() {
         guard !isCapturing else { return }
         isCapturing = true
-        isPaused = false
+        isScrollPaused = false
         startTime = .now
 
         let engine = MIDISnifferEngine(
@@ -114,12 +116,22 @@ public final class SnifferState {
         selectedMessageID = nil
     }
 
+    public func togglePause() {
+        isScrollPaused.toggle()
+        if !isScrollPaused { refilter() }
+    }
+
     // MARK: - Message handling
 
     private func appendMessage(_ message: CapturedMessage) {
-        guard !isPaused else { return }
         messages.append(message)
+        if messages.count > Self.maxMessageCount {
+            messages.removeFirst(messages.count - Self.maxMessageCount)
+            refilter()
+            return
+        }
         messageCount = messages.count
+        guard !isScrollPaused else { return }
         if filter.matches(message) {
             filteredMessages.append(message)
         }
@@ -233,7 +245,18 @@ public final class SnifferState {
     }
 
     private func refilter() {
-        filteredMessages = messages.filter { filter.matches($0) }
+        refilterTask?.cancel()
+        let currentMessages = messages
+        let currentFilter = filter
+        refilterTask = Task.detached { [weak self] in
+            let filtered = currentMessages.filter { currentFilter.matches($0) }
+            guard !Task.isCancelled else { return }
+            await MainActor.run { [weak self] in
+                guard let self else { return }
+                self.filteredMessages = filtered
+                self.messageCount = self.messages.count
+            }
+        }
     }
 
     // MARK: - Elapsed time

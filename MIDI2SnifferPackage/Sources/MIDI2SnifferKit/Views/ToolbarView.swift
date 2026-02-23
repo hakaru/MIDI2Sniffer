@@ -1,12 +1,30 @@
-// ToolbarView.swift — Capture/Stop/Clear/Export toolbar
+// ToolbarView.swift — Capture/Stop/Clear/Pause/Export toolbar
 
 import SwiftUI
-#if canImport(AppKit)
-import AppKit
-#endif
+import UniformTypeIdentifiers
+
+struct CaptureDocument: FileDocument {
+    static var readableContentTypes: [UTType] { [.json] }
+
+    let data: Data
+
+    init(data: Data) {
+        self.data = data
+    }
+
+    init(configuration: ReadConfiguration) throws {
+        self.data = configuration.file.regularFileContents ?? Data()
+    }
+
+    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+        FileWrapper(regularFileWithContents: data)
+    }
+}
 
 struct ToolbarView: ToolbarContent {
     @Bindable var state: SnifferState
+    @Binding var isExporting: Bool
+    @Binding var exportDocument: CaptureDocument?
 
     var body: some ToolbarContent {
         ToolbarItemGroup(placement: .primaryAction) {
@@ -22,6 +40,17 @@ struct ToolbarView: ToolbarContent {
             .keyboardShortcut(.space, modifiers: [])
 
             Button {
+                state.togglePause()
+            } label: {
+                Label(
+                    state.isScrollPaused ? "Resume" : "Pause",
+                    systemImage: state.isScrollPaused ? "play.fill" : "pause.fill"
+                )
+            }
+            .help(state.isScrollPaused ? "Resume display" : "Pause display")
+            .disabled(!state.isCapturing)
+
+            Button {
                 state.clear()
             } label: {
                 Label("Clear", systemImage: "trash")
@@ -30,7 +59,10 @@ struct ToolbarView: ToolbarContent {
             .keyboardShortcut("k", modifiers: .command)
 
             Button {
-                CaptureSession.exportToFile(messages: state.messages, startTime: state.startTime)
+                if let data = CaptureSession.export(messages: state.messages, startTime: state.startTime) {
+                    exportDocument = CaptureDocument(data: data)
+                    isExporting = true
+                }
             } label: {
                 Label("Export", systemImage: "square.and.arrow.up")
             }
@@ -43,7 +75,7 @@ struct ToolbarView: ToolbarContent {
             HStack(spacing: 4) {
                 if state.isCapturing {
                     Circle()
-                        .fill(.red)
+                        .fill(state.isScrollPaused ? .orange : .red)
                         .frame(width: 8, height: 8)
                 }
                 Text("\(state.messageCount)")
