@@ -129,7 +129,6 @@ public final class SnifferState {
         if messages.count > Self.maxMessageCount + Self.batchRemoveCount {
             messages.removeFirst(Self.batchRemoveCount)
             refilter()
-            return
         }
         messageCount = messages.count
         guard !isScrollPaused else { return }
@@ -258,6 +257,16 @@ public final class SnifferState {
                 self.messageCount = self.messages.count
             }
         }
+    }
+
+    // MARK: - Export
+
+    public func prepareExportData() async -> Data? {
+        let msgs = filteredMessages
+        let start = startTime
+        return await Task.detached {
+            CaptureSession.export(messages: msgs, startTime: start)
+        }.value
     }
 
     // MARK: - Elapsed time

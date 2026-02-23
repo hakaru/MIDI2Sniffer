@@ -59,9 +59,11 @@ struct ToolbarView: ToolbarContent {
             .keyboardShortcut("k", modifiers: .command)
 
             Button {
-                if let data = CaptureSession.export(messages: state.filteredMessages, startTime: state.startTime) {
-                    exportDocument = CaptureDocument(data: data)
-                    isExporting = true
+                Task {
+                    if let data = await state.prepareExportData() {
+                        exportDocument = CaptureDocument(data: data)
+                        isExporting = true
+                    }
                 }
             } label: {
                 Label("Export", systemImage: "square.and.arrow.up")
