@@ -1,0 +1,1956 @@
+{
+  "devices" : [
+    {
+      "name" : "KBD\/CTRL"
+    },
+    {
+      "name" : "iPhone"
+    }
+  ],
+  "endTime" : "2026-02-23T11:14:00.442+09:00",
+  "messages" : [
+    {
+      "category" : "Note",
+      "deltaMs" : 2476955.577015877,
+      "rawHex" : "90 2D 70",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=45 v16=57734",
+      "timestamp" : "2026-02-23T11:12:40.421+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2477370.754003525,
+      "rawHex" : "80 2D 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=45",
+      "timestamp" : "2026-02-23T11:12:40.836+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2477479.453086853,
+      "rawHex" : "90 30 64",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=51492",
+      "timestamp" : "2026-02-23T11:12:40.945+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2477814.9820566177,
+      "rawHex" : "80 30 3C",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:12:41.280+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2477918.835043907,
+      "rawHex" : "90 30 5F",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=48891",
+      "timestamp" : "2026-02-23T11:12:41.384+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478042.76907444,
+      "rawHex" : "80 30 2F",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:12:41.508+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478122.1890449524,
+      "rawHex" : "90 30 60",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=49412",
+      "timestamp" : "2026-02-23T11:12:41.588+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478227.240085602,
+      "rawHex" : "80 30 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:12:41.693+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478319.35107708,
+      "rawHex" : "90 30 6E",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=56693",
+      "timestamp" : "2026-02-23T11:12:41.785+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478441.379070282,
+      "rawHex" : "80 30 31",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:12:41.907+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478529.338002205,
+      "rawHex" : "90 30 64",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=51492",
+      "timestamp" : "2026-02-23T11:12:41.995+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478650.806069374,
+      "rawHex" : "80 30 3C",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:12:42.116+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478726.702094078,
+      "rawHex" : "90 30 60",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=49412",
+      "timestamp" : "2026-02-23T11:12:42.192+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2478882.453083992,
+      "rawHex" : "80 30 36",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:12:42.348+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495865.800023079,
+      "detail" : {
+        "bodyJSON" : "mfr=0x7F fam=256 model=256",
+        "ciType" : "Discovery",
+        "sourceMUID" : "0x186FA82"
+      },
+      "rawHex" : "F0 7E 7F 0D 70 02 75 1B 0C 0A 7F 7F 7F 7F 11 00 00 01 00 01 00 02 00 00 00 1C 00 00 01 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI Discovery src=0x186FA82 mfr=0x7F fam=256 model=256",
+      "timestamp" : "2026-02-23T11:12:59.331+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495866.6729927063,
+      "detail" : {
+        "bodyJSON" : "mfr=0x58 fam=30208 model=1025",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0xBEFE721",
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 39 46 34 21 4E 3F 5F 58 42 00 00 76 01 04 00 09 00 05 00 08 00 08 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI DiscoveryReply 0x6919C81->0xBEFE721 mfr=0x58 fam=30208 model=1025",
+      "timestamp" : "2026-02-23T11:12:59.332+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495867.7760362625,
+      "detail" : {
+        "bodyJSON" : "mfr=0x0A fam=26880 model=2305",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0x186FAFD",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 51 14 6E 7D 75 1B 0C 0A 42 00 00 69 01 09 00 07 00 01 00 08 00 00 01 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "CI DiscoveryReply 0xDC52881->0x186FAFD mfr=0x0A fam=26880 model=2305",
+      "timestamp" : "2026-02-23T11:12:59.333+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495867.8179979324,
+      "rawHex" : "F0 7E 7F 0D 30 01 51 14 6E 7D 75 1B 0C 0A 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapInquiry 0xDC52881->0x186FAFD",
+      "timestamp" : "2026-02-23T11:12:59.333+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495867.8439855576,
+      "detail" : {
+        "bodyJSON" : "mfr=0x7F fam=256 model=256",
+        "ciType" : "Discovery",
+        "sourceMUID" : "0x186FA82"
+      },
+      "rawHex" : "F0 7E 7F 0D 70 02 75 1B 0C 0A 7F 7F 7F 7F 11 00 00 01 00 01 00 02 00 00 00 1C 00 00 01 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI Discovery src=0x186FA82 mfr=0x7F fam=256 model=256",
+      "timestamp" : "2026-02-23T11:12:59.333+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495867.864012718,
+      "rawHex" : "F0 7E 7F 0D 31 01 39 46 34 21 4E 3F 5F 58 01 F7",
+      "source" : "iPhone",
+      "summary" : "PE CapReply 0x6919C81->0xBEFE721",
+      "timestamp" : "2026-02-23T11:12:59.333+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495868.96109581,
+      "detail" : {
+        "bodyJSON" : "mfr=0x7F fam=256 model=256",
+        "ciType" : "Discovery",
+        "sourceMUID" : "0x186FA82"
+      },
+      "rawHex" : "F0 7E 7F 0D 70 02 75 1B 0C 0A 7F 7F 7F 7F 11 00 00 01 00 01 00 02 00 00 00 1C 00 00 01 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI Discovery src=0x186FA82 mfr=0x7F fam=256 model=256",
+      "timestamp" : "2026-02-23T11:12:59.334+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495869.047999382,
+      "rawHex" : "F0 7E 7F 0D 30 02 75 1B 0C 0A 51 14 6E 7D 01 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE CapInquiry 0x186FA82->0xDC5288A",
+      "timestamp" : "2026-02-23T11:12:59.334+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495869.2960739136,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0xDC5288A",
+        "requestID" : 0,
+        "resource" : "ResourceList",
+        "sourceMUID" : "0x186FA82"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 02 75 1B 0C 0A 51 14 6E 7D 00 1B 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 52 65 73 6F 75 72 63 65 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET 0x186FA82->0xDC5288A ResourceList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.335+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495869.975090027,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true},{\"resource\":\"ProgramList\",\"canSubscribe\":true},{\"resource\":\"JSONSchema\"},{\"resource\":\"X-ParameterList\",\"canSet\":\"none\",\"canSubscribe\":true,\"s",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xBEFE721",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 4E 3F 5F 58 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xBEFE721 reqID=0 chunk=1\/3",
+      "timestamp" : "2026-02-23T11:12:59.335+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495870.14400959,
+      "detail" : {
+        "bodyJSON" : "chema\": {\"title\":\"Parameter List\",\"type\":\"object\",\"$ref\":\"midi+jsonschema:\/\/parameterListSchema\"}},{\"resource\":\"X-ProgramEdit\",\"canSet\":\"none\",\"canSubscribe\":true,\"schema\": {\"title\":\"Program Edit\",\"type\":\"object\",\"$ref\":\"midi+jso",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xBEFE721",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 4E 3F 5F 58 00 00 00 03 00 02 00 65 01 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 61 72 61 6D 65 74 65 72 20 4C 69 73 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F 6E 73 63 68 65 6D 61 3A 2F 2F 70 61 72 61 6D 65 74 65 72 4C 69 73 74 53 63 68 65 6D 61 22 7D 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 72 6F 67 72 61 6D 20 45 64 69 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xBEFE721 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.336+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495870.267033577,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xBEFE721",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 4E 3F 5F 58 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xBEFE721 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.336+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495870.314002037,
+      "detail" : {
+        "bodyJSON" : "mfr=0x0A fam=26880 model=2305",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0x186FAFD",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 51 14 6E 7D 75 1B 0C 0A 42 00 00 69 01 09 00 07 00 01 00 08 00 00 01 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "CI DiscoveryReply 0xDC52881->0x186FAFD mfr=0x0A fam=26880 model=2305",
+      "timestamp" : "2026-02-23T11:12:59.336+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495870.339989662,
+      "detail" : {
+        "bodyJSON" : "mfr=0x58 fam=30208 model=1025",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0xBEFE721",
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 39 46 34 21 4E 3F 5F 58 42 00 00 76 01 04 00 09 00 05 00 08 00 08 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI DiscoveryReply 0x6919C81->0xBEFE721 mfr=0x58 fam=30208 model=1025",
+      "timestamp" : "2026-02-23T11:12:59.336+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495870.369076729,
+      "rawHex" : "F0 7E 7F 0D 30 01 51 14 6E 7D 75 1B 0C 0A 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapInquiry 0xDC52881->0x186FAFD",
+      "timestamp" : "2026-02-23T11:12:59.336+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495870.393037796,
+      "detail" : {
+        "bodyJSON" : "mfr=0x58 fam=30208 model=1025",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0xBEFE721",
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 39 46 34 21 4E 3F 5F 58 42 00 00 76 01 04 00 09 00 05 00 08 00 08 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI DiscoveryReply 0x6919C81->0xBEFE721 mfr=0x58 fam=30208 model=1025",
+      "timestamp" : "2026-02-23T11:12:59.336+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495871.5699911118,
+      "detail" : {
+        "bodyJSON" : "mfr=0x0A fam=26880 model=2305",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0x186FAFD",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 51 14 6E 7D 75 1B 0C 0A 42 00 00 69 01 09 00 07 00 01 00 08 00 00 01 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "CI DiscoveryReply 0xDC52881->0x186FAFD mfr=0x0A fam=26880 model=2305",
+      "timestamp" : "2026-02-23T11:12:59.337+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495871.638059616,
+      "rawHex" : "F0 7E 7F 0D 30 01 51 14 6E 7D 75 1B 0C 0A 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapInquiry 0xDC52881->0x186FAFD",
+      "timestamp" : "2026-02-23T11:12:59.337+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495871.7399835587,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0xDC5288A",
+        "requestID" : 1,
+        "resource" : "ResourceList",
+        "sourceMUID" : "0x186FA82"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 02 75 1B 0C 0A 51 14 6E 7D 01 1B 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 52 65 73 6F 75 72 63 65 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET 0x186FA82->0xDC5288A ResourceList reqID=1",
+      "timestamp" : "2026-02-23T11:12:59.337+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2495872.6040124893,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0xDC5288A",
+        "requestID" : 2,
+        "resource" : "ResourceList",
+        "sourceMUID" : "0x186FA82"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 02 75 1B 0C 0A 51 14 6E 7D 02 1B 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 52 65 73 6F 75 72 63 65 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET 0x186FA82->0xDC5288A ResourceList reqID=2",
+      "timestamp" : "2026-02-23T11:12:59.338+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2495872.6420402527,
+      "detail" : {
+        "bodyJSON" : "mfr=0x58 fam=30208 model=1025",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0xBEFE721",
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 39 46 34 21 4E 3F 5F 58 42 00 00 76 01 04 00 09 00 05 00 08 00 08 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI DiscoveryReply 0x6919C81->0xBEFE721 mfr=0x58 fam=30208 model=1025",
+      "timestamp" : "2026-02-23T11:12:59.338+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2496070.667028427,
+      "detail" : {
+        "bodyJSON" : "mfr=0x7F fam=30208 model=1025",
+        "ciType" : "Discovery",
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 70 01 39 46 34 21 7F 7F 7F 7F 42 00 00 76 01 04 00 09 00 05 00 08 00 08 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI Discovery src=0x6919C81 mfr=0x7F fam=30208 model=1025",
+      "timestamp" : "2026-02-23T11:12:59.536+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2496070.703983307,
+      "detail" : {
+        "bodyJSON" : "mfr=0x7F fam=30208 model=1025",
+        "ciType" : "Discovery",
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 70 01 39 46 34 21 7F 7F 7F 7F 42 00 00 76 01 04 00 09 00 05 00 08 00 08 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "CI Discovery src=0x6919C81 mfr=0x7F fam=30208 model=1025",
+      "timestamp" : "2026-02-23T11:12:59.536+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2496073.336005211,
+      "detail" : {
+        "bodyJSON" : "mfr=0x21 fam=26880 model=2305",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0x6919CFD",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 51 14 6E 7D 39 46 34 21 42 00 00 69 01 09 00 07 00 01 00 08 00 00 01 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "CI DiscoveryReply 0xDC52881->0x6919CFD mfr=0x21 fam=26880 model=2305",
+      "timestamp" : "2026-02-23T11:12:59.539+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496073.6550092697,
+      "rawHex" : "F0 7E 7F 0D 30 01 51 14 6E 7D 39 46 34 21 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapInquiry 0xDC52881->0x6919CFD",
+      "timestamp" : "2026-02-23T11:12:59.539+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 2496073.709011078,
+      "detail" : {
+        "bodyJSON" : "mfr=0x21 fam=26880 model=2305",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0x6919CFD",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 51 14 6E 7D 39 46 34 21 42 00 00 69 01 09 00 07 00 01 00 08 00 00 01 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "CI DiscoveryReply 0xDC52881->0x6919CFD mfr=0x21 fam=26880 model=2305",
+      "timestamp" : "2026-02-23T11:12:59.539+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496073.737025261,
+      "rawHex" : "F0 7E 7F 0D 30 01 51 14 6E 7D 39 46 34 21 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapInquiry 0xDC52881->0x6919CFD",
+      "timestamp" : "2026-02-23T11:12:59.539+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496074.535012245,
+      "rawHex" : "F0 7E 7F 0D 31 01 39 46 34 21 51 14 6E 7D 01 F7",
+      "source" : "iPhone",
+      "summary" : "PE CapReply 0x6919C81->0xDC528A1",
+      "timestamp" : "2026-02-23T11:12:59.540+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496074.6080875397,
+      "rawHex" : "F0 7E 7F 0D 31 01 39 46 34 21 51 14 6E 7D 01 F7",
+      "source" : "iPhone",
+      "summary" : "PE CapReply 0x6919C81->0xDC528A1",
+      "timestamp" : "2026-02-23T11:12:59.540+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496074.6270418167,
+      "rawHex" : "F0 7E 7F 0D 31 01 39 46 34 21 51 14 6E 7D 01 F7",
+      "source" : "iPhone",
+      "summary" : "PE CapReply 0x6919C81->0xDC528A1",
+      "timestamp" : "2026-02-23T11:12:59.540+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496074.7460126877,
+      "rawHex" : "F0 7E 7F 0D 31 01 39 46 34 21 51 14 6E 7D 01 F7",
+      "source" : "iPhone",
+      "summary" : "PE CapReply 0x6919C81->0xDC528A1",
+      "timestamp" : "2026-02-23T11:12:59.540+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496079.7979831696,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "ResourceList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 1B 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 52 65 73 6F 75 72 63 65 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD ResourceList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.545+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496081.8420648575,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true},{\"resource\":\"ProgramList\",\"canSubscribe\":true},{\"resource\":\"JSONSchema\"},{\"resource\":\"X-ParameterList\",\"canSet\":\"none\",\"canSubscribe\":true,\"s",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/3",
+      "timestamp" : "2026-02-23T11:12:59.547+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496081.990003586,
+      "detail" : {
+        "bodyJSON" : "chema\": {\"title\":\"Parameter List\",\"type\":\"object\",\"$ref\":\"midi+jsonschema:\/\/parameterListSchema\"}},{\"resource\":\"X-ProgramEdit\",\"canSet\":\"none\",\"canSubscribe\":true,\"schema\": {\"title\":\"Program Edit\",\"type\":\"object\",\"$ref\":\"midi+jso",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 02 00 65 01 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 61 72 61 6D 65 74 65 72 20 4C 69 73 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F 6E 73 63 68 65 6D 61 3A 2F 2F 70 61 72 61 6D 65 74 65 72 4C 69 73 74 53 63 68 65 6D 61 22 7D 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 72 6F 67 72 61 6D 20 45 64 69 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.547+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496082.123041153,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.548+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496082.3290348053,
+      "detail" : {
+        "bodyJSON" : "",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xCBD32ED",
+        "headerJSON" : "{}",
+        "requestID" : 0,
+        "sourceMUID" : "0xC3C9C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0xC3C9C81->0xCBD32ED reqID=0 chunk=1\/1",
+      "timestamp" : "2026-02-23T11:12:59.548+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496082.4739933014,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.548+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496082.566022873,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "ResourceList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 1B 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 52 65 73 6F 75 72 63 65 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD ResourceList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.548+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496084.3629837036,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true},{\"resource\":\"ProgramList\",\"canSubscribe\":true},{\"resource\":\"JSONSchema\"},{\"resource\":\"X-ParameterList\",\"canSet\":\"none\",\"canSubscribe\":true,\"s",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/3",
+      "timestamp" : "2026-02-23T11:12:59.550+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496084.492087364,
+      "detail" : {
+        "bodyJSON" : "chema\": {\"title\":\"Parameter List\",\"type\":\"object\",\"$ref\":\"midi+jsonschema:\/\/parameterListSchema\"}},{\"resource\":\"X-ProgramEdit\",\"canSet\":\"none\",\"canSubscribe\":true,\"schema\": {\"title\":\"Program Edit\",\"type\":\"object\",\"$ref\":\"midi+jso",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 02 00 65 01 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 61 72 61 6D 65 74 65 72 20 4C 69 73 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F 6E 73 63 68 65 6D 61 3A 2F 2F 70 61 72 61 6D 65 74 65 72 4C 69 73 74 53 63 68 65 6D 61 22 7D 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 72 6F 67 72 61 6D 20 45 64 69 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.550+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496084.6070051193,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.550+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496085.452079773,
+      "detail" : {
+        "bodyJSON" : "",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xCBD32ED",
+        "headerJSON" : "{}",
+        "requestID" : 0,
+        "sourceMUID" : "0xC3C9C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0xC3C9C81->0xCBD32ED reqID=0 chunk=1\/1",
+      "timestamp" : "2026-02-23T11:12:59.551+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496085.5840444565,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.551+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496100.998044014,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "ResourceList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 1B 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 52 65 73 6F 75 72 63 65 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD ResourceList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.566+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496103.1560897827,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true},{\"resource\":\"ProgramList\",\"canSubscribe\":true},{\"resource\":\"JSONSchema\"},{\"resource\":\"X-ParameterList\",\"canSet\":\"none\",\"canSubscribe\":true,\"s",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/3",
+      "timestamp" : "2026-02-23T11:12:59.569+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496103.2980680466,
+      "detail" : {
+        "bodyJSON" : "chema\": {\"title\":\"Parameter List\",\"type\":\"object\",\"$ref\":\"midi+jsonschema:\/\/parameterListSchema\"}},{\"resource\":\"X-ProgramEdit\",\"canSet\":\"none\",\"canSubscribe\":true,\"schema\": {\"title\":\"Program Edit\",\"type\":\"object\",\"$ref\":\"midi+jso",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 02 00 65 01 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 61 72 61 6D 65 74 65 72 20 4C 69 73 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F 6E 73 63 68 65 6D 61 3A 2F 2F 70 61 72 61 6D 65 74 65 72 4C 69 73 74 53 63 68 65 6D 61 22 7D 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 72 6F 67 72 61 6D 20 45 64 69 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.569+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496103.4120321274,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.569+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496103.5900115967,
+      "detail" : {
+        "bodyJSON" : "",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xCBD32ED",
+        "headerJSON" : "{}",
+        "requestID" : 0,
+        "sourceMUID" : "0xC3C9C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0xC3C9C81->0xCBD32ED reqID=0 chunk=1\/1",
+      "timestamp" : "2026-02-23T11:12:59.569+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496103.8210392,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.569+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496103.9370298386,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "ResourceList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 1B 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 52 65 73 6F 75 72 63 65 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD ResourceList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.569+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496104.4989824295,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true},{\"resource\":\"ProgramList\",\"canSubscribe\":true},{\"resource\":\"JSONSchema\"},{\"resource\":\"X-ParameterList\",\"canSet\":\"none\",\"canSubscribe\":true,\"s",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/3",
+      "timestamp" : "2026-02-23T11:12:59.570+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496104.7010421753,
+      "detail" : {
+        "bodyJSON" : "chema\": {\"title\":\"Parameter List\",\"type\":\"object\",\"$ref\":\"midi+jsonschema:\/\/parameterListSchema\"}},{\"resource\":\"X-ProgramEdit\",\"canSet\":\"none\",\"canSubscribe\":true,\"schema\": {\"title\":\"Program Edit\",\"type\":\"object\",\"$ref\":\"midi+jso",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 02 00 65 01 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 61 72 61 6D 65 74 65 72 20 4C 69 73 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F 6E 73 63 68 65 6D 61 3A 2F 2F 70 61 72 61 6D 65 74 65 72 4C 69 73 74 53 63 68 65 6D 61 22 7D 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 72 6F 67 72 61 6D 20 45 64 69 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.570+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496104.838013649,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.570+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496105.8690547943,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true},{\"resource\":\"ProgramList\",\"canSubscribe\":true},{\"resource\":\"JSONSchema\"},{\"resource\":\"X-ParameterList\",\"canSet\":\"none\",\"canSubscribe\":true,\"s",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/3",
+      "timestamp" : "2026-02-23T11:12:59.571+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496106.0030460358,
+      "detail" : {
+        "bodyJSON" : "chema\": {\"title\":\"Parameter List\",\"type\":\"object\",\"$ref\":\"midi+jsonschema:\/\/parameterListSchema\"}},{\"resource\":\"X-ProgramEdit\",\"canSet\":\"none\",\"canSubscribe\":true,\"schema\": {\"title\":\"Program Edit\",\"type\":\"object\",\"$ref\":\"midi+jso",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 02 00 65 01 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 61 72 61 6D 65 74 65 72 20 4C 69 73 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F 6E 73 63 68 65 6D 61 3A 2F 2F 70 61 72 61 6D 65 74 65 72 4C 69 73 74 53 63 68 65 6D 61 22 7D 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 2C 22 63 61 6E 53 65 74 22 3A 22 6E 6F 6E 65 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 2C 22 73 63 68 65 6D 61 22 3A 20 7B 22 74 69 74 6C 65 22 3A 22 50 72 6F 67 72 61 6D 20 45 64 69 74 22 2C 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 24 72 65 66 22 3A 22 6D 69 64 69 2B 6A 73 6F F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.571+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496106.130003929,
+      "detail" : {
+        "bodyJSON" : "nschema:\/\/programEditSchema\"}}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 1F 00 6E 73 63 68 65 6D 61 3A 2F 2F 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.572+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496152.0470380783,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "DeviceInfo",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 19 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD DeviceInfo reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.617+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496152.1199941635,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "ChannelList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 1A 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD ChannelList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.618+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496152.359008789,
+      "detail" : {
+        "bodyJSON" : "[{\"title\":\"KORG Module\",\"channel\":1,\"programTitle\":\"1.Natural Grand\",\"bankPC\":[0,0,0],\"links\":[{\"resource\":\"ProgramList\",\"resId\":\"setlist\",\"title\":\"New Set List\"},{\"resource\":\"X-ParameterList\"},{\"resource\":\"X-Progra",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 02 00 01 00 57 01 5B 7B 22 74 69 74 6C 65 22 3A 22 4B 4F 52 47 20 4D 6F 64 75 6C 65 22 2C 22 63 68 61 6E 6E 65 6C 22 3A 31 2C 22 70 72 6F 67 72 61 6D 54 69 74 6C 65 22 3A 22 31 2E 4E 61 74 75 72 61 6C 20 47 72 61 6E 64 22 2C 22 62 61 6E 6B 50 43 22 3A 5B 30 2C 30 2C 30 5D 2C 22 6C 69 6E 6B 73 22 3A 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 72 65 73 49 64 22 3A 22 73 65 74 6C 69 73 74 22 2C 22 74 69 74 6C 65 22 3A 22 4E 65 77 20 53 65 74 20 4C 69 73 74 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/2",
+      "timestamp" : "2026-02-23T11:12:59.618+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496152.474999428,
+      "detail" : {
+        "bodyJSON" : "mEdit\"}]}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 02 00 02 00 0A 00 6D 45 64 69 74 22 7D 5D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/2",
+      "timestamp" : "2026-02-23T11:12:59.618+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496158.8690280914,
+      "detail" : {
+        "bodyJSON" : "{\"manufacturerId\":[66,0,0],\"manufacturer\":\"KORG Inc.\",\"familyId\":[118,1],\"family\":\"KORG Module\",\"modelId\":[4,0],\"model\":\"Module Pro\",\"versionId\":[9,0,5,0],\"version\":\"5.0.11\"}",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 01 00 01 00 2E 01 7B 22 6D 61 6E 75 66 61 63 74 75 72 65 72 49 64 22 3A 5B 36 36 2C 30 2C 30 5D 2C 22 6D 61 6E 75 66 61 63 74 75 72 65 72 22 3A 22 4B 4F 52 47 20 49 6E 63 2E 22 2C 22 66 61 6D 69 6C 79 49 64 22 3A 5B 31 31 38 2C 31 5D 2C 22 66 61 6D 69 6C 79 22 3A 22 4B 4F 52 47 20 4D 6F 64 75 6C 65 22 2C 22 6D 6F 64 65 6C 49 64 22 3A 5B 34 2C 30 5D 2C 22 6D 6F 64 65 6C 22 3A 22 4D 6F 64 75 6C 65 20 50 72 6F 22 2C 22 76 65 72 73 69 6F 6E 49 64 22 3A 5B 39 2C 30 2C 35 2C 30 5D 2C 22 76 65 72 73 69 6F 6E 22 3A 22 35 2E 30 2E 31 31 22 7D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/1",
+      "timestamp" : "2026-02-23T11:12:59.624+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496159.008026123,
+      "detail" : {
+        "bodyJSON" : "[{\"title\":\"KORG Module\",\"channel\":1,\"programTitle\":\"1.Natural Grand\",\"bankPC\":[0,0,0],\"links\":[{\"resource\":\"ProgramList\",\"resId\":\"setlist\",\"title\":\"New Set List\"},{\"resource\":\"X-ParameterList\"},{\"resource\":\"X-Progra",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 02 00 01 00 57 01 5B 7B 22 74 69 74 6C 65 22 3A 22 4B 4F 52 47 20 4D 6F 64 75 6C 65 22 2C 22 63 68 61 6E 6E 65 6C 22 3A 31 2C 22 70 72 6F 67 72 61 6D 54 69 74 6C 65 22 3A 22 31 2E 4E 61 74 75 72 61 6C 20 47 72 61 6E 64 22 2C 22 62 61 6E 6B 50 43 22 3A 5B 30 2C 30 2C 30 5D 2C 22 6C 69 6E 6B 73 22 3A 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 72 65 73 49 64 22 3A 22 73 65 74 6C 69 73 74 22 2C 22 74 69 74 6C 65 22 3A 22 4E 65 77 20 53 65 74 20 4C 69 73 74 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/2",
+      "timestamp" : "2026-02-23T11:12:59.624+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496159.1160297394,
+      "detail" : {
+        "bodyJSON" : "mEdit\"}]}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 02 00 02 00 0A 00 6D 45 64 69 74 22 7D 5D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/2",
+      "timestamp" : "2026-02-23T11:12:59.625+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496182.4630498886,
+      "detail" : {
+        "bodyJSON" : "start",
+        "ciType" : "PE-Subscribe",
+        "destMUID" : "0x6919CFD",
+        "resource" : "ChannelList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 38 01 51 14 6E 7D 39 46 34 21 00 2C 00 7B 22 63 6F 6D 6D 61 6E 64 22 3A 22 73 74 61 72 74 22 2C 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE Subscribe 0xDC52881->0x6919CFD ChannelList cmd=start",
+      "timestamp" : "2026-02-23T11:12:59.648+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496207.4780464172,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "chlst"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 63 68 6C 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=chlst",
+      "timestamp" : "2026-02-23T11:12:59.673+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496207.6439857483,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "ProgramList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 31 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 2C 22 6F 66 66 73 65 74 22 3A 30 2C 22 6C 69 6D 69 74 22 3A 31 32 38 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD ProgramList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.673+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496221.5020656586,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "chlst"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 63 68 6C 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=chlst",
+      "timestamp" : "2026-02-23T11:12:59.687+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496221.6650247574,
+      "detail" : {
+        "bodyJSON" : "start",
+        "ciType" : "PE-Subscribe",
+        "destMUID" : "0x6919CFD",
+        "resource" : "ProgramList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 38 01 51 14 6E 7D 39 46 34 21 00 2C 00 7B 22 63 6F 6D 6D 61 6E 64 22 3A 22 73 74 61 72 74 22 2C 22 72 65 73 6F 75 72 63 65 22 3A 22 50 72 6F 67 72 61 6D 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE Subscribe 0xDC52881->0x6919CFD ProgramList cmd=start",
+      "timestamp" : "2026-02-23T11:12:59.687+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496221.825003624,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "pglst"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 70 67 6C 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=pglst",
+      "timestamp" : "2026-02-23T11:12:59.687+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496221.8890190125,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "X-ParameterList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 1E 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD X-ParameterList reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.687+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496222.016096115,
+      "detail" : {
+        "bodyJSON" : "[{\"name\":\"EQ Low\",\"controlcc\":100,\"default\":64},{\"name\":\"EQ Mid\",\"controlcc\":101,\"default\":64},{\"name\":\"EQ High\",\"controlcc\":102,\"default\":64},{\"name\":\"Release Time\",\"controlcc\":72,\"default\":64},{\"name\":\"Damper Leve",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 5B 7B 22 6E 61 6D 65 22 3A 22 45 51 20 4C 6F 77 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 30 30 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 45 51 20 4D 69 64 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 30 31 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 45 51 20 48 69 67 68 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 30 32 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 52 65 6C 65 61 73 65 20 54 69 6D 65 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 37 32 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 44 61 6D 70 65 72 20 4C 65 76 65 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/3",
+      "timestamp" : "2026-02-23T11:12:59.687+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496222.137093544,
+      "detail" : {
+        "bodyJSON" : "l\",\"controlcc\":71,\"default\":64},{\"name\":\"Inst Level\",\"controlcc\":11,\"default\":103},{\"name\":\"Mod Fx Edit 1\",\"controlcc\":12,\"default\":64},{\"name\":\"Mod Fx Edit 2\",\"controlcc\":13,\"default\":64},{\"name\":\"Ambi Fx Edit 1\",\"controlcc\":16,",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 02 00 65 01 6C 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 37 31 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 49 6E 73 74 20 4C 65 76 65 6C 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 31 2C 22 64 65 66 61 75 6C 74 22 3A 31 30 33 7D 2C 7B 22 6E 61 6D 65 22 3A 22 4D 6F 64 20 46 78 20 45 64 69 74 20 31 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 32 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 4D 6F 64 20 46 78 20 45 64 69 74 20 32 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 33 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 41 6D 62 69 20 46 78 20 45 64 69 74 20 31 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 36 2C F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.688+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496222.2650051117,
+      "detail" : {
+        "bodyJSON" : "\"default\":64},{\"name\":\"Ambi Fx Edit 2\",\"controlcc\":17,\"default\":64}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 44 00 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 41 6D 62 69 20 46 78 20 45 64 69 74 20 32 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 37 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.688+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496227.863073349,
+      "detail" : {
+        "bodyJSON" : "start",
+        "ciType" : "PE-Subscribe",
+        "destMUID" : "0x6919CFD",
+        "resource" : "X-ParameterList",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 38 01 51 14 6E 7D 39 46 34 21 00 30 00 7B 22 63 6F 6D 6D 61 6E 64 22 3A 22 73 74 61 72 74 22 2C 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 61 72 61 6D 65 74 65 72 4C 69 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE Subscribe 0xDC52881->0x6919CFD X-ParameterList cmd=start",
+      "timestamp" : "2026-02-23T11:12:59.693+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496227.9599905014,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "X-ProgramEdit",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 1C 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD X-ProgramEdit reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.693+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496229.3560504913,
+      "detail" : {
+        "bodyJSON" : "start",
+        "ciType" : "PE-Subscribe",
+        "destMUID" : "0x6919CFD",
+        "resource" : "X-ProgramEdit",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 38 01 51 14 6E 7D 39 46 34 21 00 2E 00 7B 22 63 6F 6D 6D 61 6E 64 22 3A 22 73 74 61 72 74 22 2C 22 72 65 73 6F 75 72 63 65 22 3A 22 58 2D 50 72 6F 67 72 61 6D 45 64 69 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE Subscribe 0xDC52881->0x6919CFD X-ProgramEdit cmd=start",
+      "timestamp" : "2026-02-23T11:12:59.695+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496229.4570207596,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "JSONSchema",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 37 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 2C 22 72 65 73 49 64 22 3A 22 70 61 72 61 6D 65 74 65 72 4C 69 73 74 53 63 68 65 6D 61 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD JSONSchema reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.695+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496229.51900959,
+      "detail" : {
+        "ciType" : "PE-GET",
+        "destMUID" : "0x6919CFD",
+        "requestID" : 0,
+        "resource" : "JSONSchema",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 34 01 51 14 6E 7D 39 46 34 21 00 35 00 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 4A 53 4F 4E 53 63 68 65 6D 61 22 2C 22 72 65 73 49 64 22 3A 22 70 72 6F 67 72 61 6D 45 64 69 74 53 63 68 65 6D 61 22 7D 01 00 01 00 00 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET 0xDC52881->0x6919CFD JSONSchema reqID=0",
+      "timestamp" : "2026-02-23T11:12:59.695+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496257.6130628586,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "modcc"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 6D 6F 64 63 63 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=modcc",
+      "timestamp" : "2026-02-23T11:12:59.723+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496257.7570676804,
+      "detail" : {
+        "bodyJSON" : "[{\"title\":\"Song 1\",\"bankPC\":[0,0,0]},{\"title\":\"Song 2\",\"bankPC\":[0,0,1]},{\"title\":\"Song 3\",\"bankPC\":[0,0,2]},{\"title\":\"Song 4\",\"bankPC\":[0,0,3]},{\"title\":\"Song 5\",\"bankPC\":[0,0,4]}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200,\"totalCount\":5}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 1D 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 74 6F 74 61 6C 43 6F 75 6E 74 22 3A 35 7D 01 00 01 00 35 01 5B 7B 22 74 69 74 6C 65 22 3A 22 53 6F 6E 67 20 31 22 2C 22 62 61 6E 6B 50 43 22 3A 5B 30 2C 30 2C 30 5D 7D 2C 7B 22 74 69 74 6C 65 22 3A 22 53 6F 6E 67 20 32 22 2C 22 62 61 6E 6B 50 43 22 3A 5B 30 2C 30 2C 31 5D 7D 2C 7B 22 74 69 74 6C 65 22 3A 22 53 6F 6E 67 20 33 22 2C 22 62 61 6E 6B 50 43 22 3A 5B 30 2C 30 2C 32 5D 7D 2C 7B 22 74 69 74 6C 65 22 3A 22 53 6F 6E 67 20 34 22 2C 22 62 61 6E 6B 50 43 22 3A 5B 30 2C 30 2C 33 5D 7D 2C 7B 22 74 69 74 6C 65 22 3A 22 53 6F 6E 67 20 35 22 2C 22 62 61 6E 6B 50 43 22 3A 5B 30 2C 30 2C 34 5D 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/1",
+      "timestamp" : "2026-02-23T11:12:59.723+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496257.871031761,
+      "detail" : {
+        "bodyJSON" : "{\"currentValues\":[{\"name\":\"EQ Low\",\"value\":127,\"displayValue\":\"10.0\",\"displayUnit\":\"\"},{\"name\":\"EQ Mid\",\"value\":120,\"displayValue\":\"8.8\",\"displayUnit\":\"\"},{\"name\":\"EQ High\",\"value\":26,\"displayValue\":\"-5.9\",\"displayU",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 04 00 01 00 57 01 7B 22 63 75 72 72 65 6E 74 56 61 6C 75 65 73 22 3A 5B 7B 22 6E 61 6D 65 22 3A 22 45 51 20 4C 6F 77 22 2C 22 76 61 6C 75 65 22 3A 31 32 37 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 31 30 2E 30 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C 7B 22 6E 61 6D 65 22 3A 22 45 51 20 4D 69 64 22 2C 22 76 61 6C 75 65 22 3A 31 32 30 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 38 2E 38 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C 7B 22 6E 61 6D 65 22 3A 22 45 51 20 48 69 67 68 22 2C 22 76 61 6C 75 65 22 3A 32 36 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 2D 35 2E 39 22 2C 22 64 69 73 70 6C 61 79 55 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/4",
+      "timestamp" : "2026-02-23T11:12:59.723+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496258.1040859222,
+      "detail" : {
+        "bodyJSON" : "niyValue\":\"10.0\",\"displayUnit\":\"\"},",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 04 00 02 00 65 01 6E 69 79 56 61 6C 75 65 22 3A 22 31 30 2E 30 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/4",
+      "timestamp" : "2026-02-23T11:12:59.724+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496258.243083954,
+      "detail" : {
+        "bodyJSON" : "Ambi Fx Edit 2\",\"value\":6,\"displayValue\":\"6\",\"displayUnit\":\"\"}]}",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 04 00 04 00 40 00 41 6D 62 69 20 46 78 20 45 64 69 74 20 32 22 2C 22 76 61 6C 75 65 22 3A 36 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 36 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 5D 7D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=4\/4",
+      "timestamp" : "2026-02-23T11:12:59.724+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496258.4280967712,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "param"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 70 61 72 61 6D 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=param",
+      "timestamp" : "2026-02-23T11:12:59.724+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496258.6320638657,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "pglst"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 70 67 6C 73 74 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=pglst",
+      "timestamp" : "2026-02-23T11:12:59.724+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496258.791089058,
+      "detail" : {
+        "bodyJSON" : "\"default\":64},{\"name\":\"Ambi Fx Edit 2\",\"controlcc\":17,\"default\":64}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 44 00 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 2C 7B 22 6E 61 6D 65 22 3A 22 41 6D 62 69 20 46 78 20 45 64 69 74 20 32 22 2C 22 63 6F 6E 74 72 6F 6C 63 63 22 3A 31 37 2C 22 64 65 66 61 75 6C 74 22 3A 36 34 7D 5D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.724+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496273.200035095,
+      "detail" : {
+        "bodyJSON" : "meter\",\"type\":\"integer\",\"minimum\":0,\"maximum\":127},\"default\":{\"title\":\"Default Value\",\"description\":\"Default value for this parameter\",\"type\":\"integer\",\"minimum\":0,\"maximum\":127}}}}",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 02 00 02 00 35 01 6D 65 74 65 72 22 2C 22 74 79 70 65 22 3A 22 69 6E 74 65 67 65 72 22 2C 22 6D 69 6E 69 6D 75 6D 22 3A 30 2C 22 6D 61 78 69 6D 75 6D 22 3A 31 32 37 7D 2C 22 64 65 66 61 75 6C 74 22 3A 7B 22 74 69 74 6C 65 22 3A 22 44 65 66 61 75 6C 74 20 56 61 6C 75 65 22 2C 22 64 65 73 63 72 69 70 74 69 6F 6E 22 3A 22 44 65 66 61 75 6C 74 20 76 61 6C 75 65 20 66 6F 72 20 74 68 69 73 20 70 61 72 61 6D 65 74 65 72 22 2C 22 74 79 70 65 22 3A 22 69 6E 74 65 67 65 72 22 2C 22 6D 69 6E 69 6D 75 6D 22 3A 30 2C 22 6D 61 78 69 6D 75 6D 22 3A 31 32 37 7D 7D 7D 7D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/2",
+      "timestamp" : "2026-02-23T11:12:59.739+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496273.3720541,
+      "detail" : {
+        "bodyJSON" : "(Control Change value)\",\"description\":\"Current Value\",\"type\":\"integer\",\"minimum\":0,\"maximum\":127},\"displayValue\":{\"title\":\"Display Value\",\"description\":\"Current Value displayed on the UI (actual value)\",\"type\":\"string\"},\"displayU",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 02 00 65 01 28 43 6F 6E 74 72 6F 6C 20 43 68 61 6E 67 65 20 76 61 6C 75 65 29 22 2C 22 64 65 73 63 72 69 70 74 69 6F 6E 22 3A 22 43 75 72 72 65 6E 74 20 56 61 6C 75 65 22 2C 22 74 79 70 65 22 3A 22 69 6E 74 65 67 65 72 22 2C 22 6D 69 6E 69 6D 75 6D 22 3A 30 2C 22 6D 61 78 69 6D 75 6D 22 3A 31 32 37 7D 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 7B 22 74 69 74 6C 65 22 3A 22 44 69 73 70 6C 61 79 20 56 61 6C 75 65 22 2C 22 64 65 73 63 72 69 70 74 69 6F 6E 22 3A 22 43 75 72 72 65 6E 74 20 56 61 6C 75 65 20 64 69 73 70 6C 61 79 65 64 20 6F 6E 20 74 68 65 20 55 49 20 28 61 63 74 75 61 6C 20 76 61 6C 75 65 29 22 2C 22 74 79 70 65 22 3A 22 73 74 72 69 6E 67 22 7D 2C 22 64 69 73 70 6C 61 79 55 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/3",
+      "timestamp" : "2026-02-23T11:12:59.739+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496273.505091667,
+      "detail" : {
+        "bodyJSON" : "nit\":{\"title\":\"Display Unit\",\"description\":\"Unit text for this parameter\",\"type\":\"string\"}}}}}}",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 5F 00 6E 69 74 22 3A 7B 22 74 69 74 6C 65 22 3A 22 44 69 73 70 6C 61 79 20 55 6E 69 74 22 2C 22 64 65 73 63 72 69 70 74 69 6F 6E 22 3A 22 55 6E 69 74 20 74 65 78 74 20 66 6F 72 20 74 68 69 73 20 70 61 72 61 6D 65 74 65 72 22 2C 22 74 79 70 65 22 3A 22 73 74 72 69 6E 67 22 7D 7D 7D 7D 7D 7D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.739+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496273.691058159,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "modcc"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 6D 6F 64 63 63 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=modcc",
+      "timestamp" : "2026-02-23T11:12:59.739+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496273.8280296326,
+      "detail" : {
+        "bodyJSON" : "{\"currentValues\":[{\"name\":\"EQ Low\",\"value\":127,\"displayValue\":\"10.0\",\"displayUnit\":\"\"},{\"name\":\"EQ Mid\",\"value\":120,\"displayValue\":\"8.8\",\"displayUnit\":\"\"},{\"name\":\"EQ High\",\"value\":26,\"displayValue\":\"-5.9\",\"displayU",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 04 00 01 00 57 01 7B 22 63 75 72 72 65 6E 74 56 61 6C 75 65 73 22 3A 5B 7B 22 6E 61 6D 65 22 3A 22 45 51 20 4C 6F 77 22 2C 22 76 61 6C 75 65 22 3A 31 32 37 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 31 30 2E 30 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C 7B 22 6E 61 6D 65 22 3A 22 45 51 20 4D 69 64 22 2C 22 76 61 6C 75 65 22 3A 31 32 30 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 38 2E 38 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C 7B 22 6E 61 6D 65 22 3A 22 45 51 20 48 69 67 68 22 2C 22 76 61 6C 75 65 22 3A 32 36 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 2D 35 2E 39 22 2C 22 64 69 73 70 6C 61 79 55 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/4",
+      "timestamp" : "2026-02-23T11:12:59.739+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496274.0240097046,
+      "detail" : {
+        "bodyJSON" : "nit\":\"\"},{\"name\":\"Release Time\",\"value\":103,\"displayValue\":\"8.0\",\"displayUnit\":\"\"},{\"name\":\"Damper Level\",\"value\":64,\"displayValue\":\"5.0\",\"displayUnit\":\"\"},{\"name\":\"Inst Level\",\"value\":127,\"displayValue\":\"10.0\",\"displayUnit\":\"\"},",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 04 00 02 00 65 01 6E 69 74 22 3A 22 22 7D 2C 7B 22 6E 61 6D 65 22 3A 22 52 65 6C 65 61 73 65 20 54 69 6D 65 22 2C 22 76 61 6C 75 65 22 3A 31 30 33 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 38 2E 30 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C 7B 22 6E 61 6D 65 22 3A 22 44 61 6D 70 65 72 20 4C 65 76 65 6C 22 2C 22 76 61 6C 75 65 22 3A 36 34 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 35 2E 30 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C 7B 22 6E 61 6D 65 22 3A 22 49 6E 73 74 20 4C 65 76 65 6C 22 2C 22 76 61 6C 75 65 22 3A 31 32 37 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 31 30 2E 30 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 2C F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/4",
+      "timestamp" : "2026-02-23T11:12:59.739+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496274.295091629,
+      "detail" : {
+        "bodyJSON" : "Ambi Fx Edit 2\",\"value\":6,\"displayValue\":\"6\",\"displayUnit\":\"\"}]}",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 04 00 04 00 40 00 41 6D 62 69 20 46 78 20 45 64 69 74 20 32 22 2C 22 76 61 6C 75 65 22 3A 36 2C 22 64 69 73 70 6C 61 79 56 61 6C 75 65 22 3A 22 36 22 2C 22 64 69 73 70 6C 61 79 55 6E 69 74 22 3A 22 22 7D 5D 7D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=4\/4",
+      "timestamp" : "2026-02-23T11:12:59.740+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496274.487018585,
+      "detail" : {
+        "ciType" : "PE-SubscribeReply",
+        "destMUID" : "0xDC528A1",
+        "sourceMUID" : "0x6919C81",
+        "subscribeId" : "param"
+      },
+      "rawHex" : "F0 7E 7F 0D 39 01 39 46 34 21 51 14 6E 7D 00 24 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 2C 22 73 75 62 73 63 72 69 62 65 49 64 22 3A 22 70 61 72 61 6D 22 7D 01 00 01 00 00 00 F7",
+      "source" : "iPhone",
+      "summary" : "PE SubscribeReply 0x6919C81->0xDC528A1 subId=param",
+      "timestamp" : "2026-02-23T11:12:59.740+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496274.6189832687,
+      "detail" : {
+        "bodyJSON" : "meter\",\"type\":\"integer\",\"minimum\":0,\"maximum\":127},\"default\":{\"title\":\"Default Value\",\"description\":\"Default value for this parameter\",\"type\":\"integer\",\"minimum\":0,\"maximum\":127}}}}",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 02 00 02 00 35 01 6D 65 74 65 72 22 2C 22 74 79 70 65 22 3A 22 69 6E 74 65 67 65 72 22 2C 22 6D 69 6E 69 6D 75 6D 22 3A 30 2C 22 6D 61 78 69 6D 75 6D 22 3A 31 32 37 7D 2C 22 64 65 66 61 75 6C 74 22 3A 7B 22 74 69 74 6C 65 22 3A 22 44 65 66 61 75 6C 74 20 56 61 6C 75 65 22 2C 22 64 65 73 63 72 69 70 74 69 6F 6E 22 3A 22 44 65 66 61 75 6C 74 20 76 61 6C 75 65 20 66 6F 72 20 74 68 69 73 20 70 61 72 61 6D 65 74 65 72 22 2C 22 74 79 70 65 22 3A 22 69 6E 74 65 67 65 72 22 2C 22 6D 69 6E 69 6D 75 6D 22 3A 30 2C 22 6D 61 78 69 6D 75 6D 22 3A 31 32 37 7D 7D 7D 7D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=2\/2",
+      "timestamp" : "2026-02-23T11:12:59.740+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496274.7480869293,
+      "detail" : {
+        "bodyJSON" : "\u0003\u0000\u0001\u0000W\u0001{\"type\":\"object\",\"properties\":{\"currentValues\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"title\":\"Parameter Name\",\"description\":\"ParameF4!Q\u0014ne\":\"string\"},\"value\":{\"title\":\"Current Value ",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 03 00 01 00 57 01 7B 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 70 72 6F 70 65 72 74 69 65 73 22 3A 7B 22 63 75 72 72 65 6E 74 56 61 6C 75 65 73 22 3A 7B 22 74 79 70 65 22 3A 22 61 72 72 61 79 22 2C 22 69 74 65 6D 73 22 3A 7B 22 74 79 70 65 22 3A 22 6F 62 6A 65 63 74 22 2C 22 70 72 6F 70 65 72 74 69 65 73 22 3A 7B 22 6E 61 6D 65 22 3A 7B 22 74 69 74 6C 65 22 3A 22 50 61 72 61 6D 65 74 65 72 20 4E 61 6D 65 22 2C 22 64 65 73 63 72 69 70 74 69 6F 6E 22 3A 22 50 61 72 61 6D 65 46 34 21 51 14 6E 65 22 3A 22 73 74 72 69 6E 67 22 7D 2C 22 76 61 6C 75 65 22 3A 7B 22 74 69 74 6C 65 22 3A 22 43 75 72 72 65 6E 74 20 56 61 6C 75 65 20 F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=1\/1",
+      "timestamp" : "2026-02-23T11:12:59.740+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 2496274.881005287,
+      "detail" : {
+        "bodyJSON" : "nit\":{\"title\":\"Display Unit\",\"description\":\"Unit text for this parameter\",\"type\":\"string\"}}}}}}",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xDC528A1",
+        "headerJSON" : "",
+        "requestID" : 0,
+        "sourceMUID" : "0x6919C81"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 39 46 34 21 51 14 6E 7D 00 00 00 03 00 03 00 5F 00 6E 69 74 22 3A 7B 22 74 69 74 6C 65 22 3A 22 44 69 73 70 6C 61 79 20 55 6E 69 74 22 2C 22 64 65 73 63 72 69 70 74 69 6F 6E 22 3A 22 55 6E 69 74 20 74 65 78 74 20 66 6F 72 20 74 68 69 73 20 70 61 72 61 6D 65 74 65 72 22 2C 22 74 79 70 65 22 3A 22 73 74 72 69 6E 67 22 7D 7D 7D 7D 7D 7D F7",
+      "source" : "iPhone",
+      "summary" : "PE GET-Reply 0x6919C81->0xDC528A1 reqID=0 chunk=3\/3",
+      "timestamp" : "2026-02-23T11:12:59.740+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2503628.6820173264,
+      "rawHex" : "90 29 2B",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=41 v16=22016",
+      "timestamp" : "2026-02-23T11:13:07.094+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2503790.7910346985,
+      "rawHex" : "80 29 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=41",
+      "timestamp" : "2026-02-23T11:13:07.256+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2503908.241033554,
+      "rawHex" : "90 2B 63",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=43 v16=50972",
+      "timestamp" : "2026-02-23T11:13:07.374+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2503982.740998268,
+      "rawHex" : "80 2B 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=43",
+      "timestamp" : "2026-02-23T11:13:07.448+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2504175.8279800415,
+      "rawHex" : "90 2D 5C",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=45 v16=47331",
+      "timestamp" : "2026-02-23T11:13:07.641+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2504187.3960494995,
+      "rawHex" : "80 2D 39",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=45",
+      "timestamp" : "2026-02-23T11:13:07.653+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505169.427037239,
+      "rawHex" : "90 32 51",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=41610",
+      "timestamp" : "2026-02-23T11:13:08.635+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505315.2780532837,
+      "rawHex" : "90 34 53",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=52 v16=42650",
+      "timestamp" : "2026-02-23T11:13:08.781+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505315.2910470963,
+      "rawHex" : "80 32 35",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:08.781+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505545.258998871,
+      "rawHex" : "80 34 2D",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=52",
+      "timestamp" : "2026-02-23T11:13:09.011+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505587.138056755,
+      "rawHex" : "90 32 2D",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=23040",
+      "timestamp" : "2026-02-23T11:13:09.053+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505724.135041237,
+      "rawHex" : "80 32 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:09.190+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505724.177002907,
+      "rawHex" : "90 34 3D",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=52 v16=31232",
+      "timestamp" : "2026-02-23T11:13:09.190+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505828.8000822067,
+      "rawHex" : "90 35 38",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=53 v16=28672",
+      "timestamp" : "2026-02-23T11:13:09.294+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505828.8370370865,
+      "rawHex" : "80 34 35",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=52",
+      "timestamp" : "2026-02-23T11:13:09.294+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505869.197010994,
+      "rawHex" : "80 35 21",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=53",
+      "timestamp" : "2026-02-23T11:13:09.335+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2505988.1850481033,
+      "rawHex" : "90 35 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=53 v16=32768",
+      "timestamp" : "2026-02-23T11:13:09.454+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2506253.821015358,
+      "rawHex" : "80 35 23",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=53",
+      "timestamp" : "2026-02-23T11:13:09.719+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2506402.848005295,
+      "rawHex" : "90 34 42",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=52 v16=33808",
+      "timestamp" : "2026-02-23T11:13:09.868+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2506630.8670043945,
+      "rawHex" : "90 32 42",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=33808",
+      "timestamp" : "2026-02-23T11:13:10.096+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2506641.268014908,
+      "rawHex" : "80 34 15",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=52",
+      "timestamp" : "2026-02-23T11:13:10.107+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2506889.5159959793,
+      "rawHex" : "90 34 4B",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=52 v16=38489",
+      "timestamp" : "2026-02-23T11:13:10.355+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2506889.569044113,
+      "rawHex" : "80 32 2E",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:10.355+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2507173.7810373306,
+      "rawHex" : "80 34 10",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=52",
+      "timestamp" : "2026-02-23T11:13:10.639+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2507331.771016121,
+      "rawHex" : "90 35 47",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=53 v16=36408",
+      "timestamp" : "2026-02-23T11:13:10.797+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2507721.291065216,
+      "rawHex" : "80 35 01",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=53",
+      "timestamp" : "2026-02-23T11:13:11.187+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2507721.337080002,
+      "rawHex" : "90 34 43",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=52 v16=34328",
+      "timestamp" : "2026-02-23T11:13:11.187+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2507997.922062874,
+      "rawHex" : "80 34 14",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=52",
+      "timestamp" : "2026-02-23T11:13:11.463+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2508077.267050743,
+      "rawHex" : "90 32 35",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=27136",
+      "timestamp" : "2026-02-23T11:13:11.543+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2508267.9550647736,
+      "rawHex" : "80 32 3D",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:11.733+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2510618.113040924,
+      "rawHex" : "90 32 58",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=45251",
+      "timestamp" : "2026-02-23T11:13:14.084+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2511797.6200580597,
+      "rawHex" : "80 32 33",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:15.263+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2512179.113984108,
+      "rawHex" : "90 32 3C",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=30720",
+      "timestamp" : "2026-02-23T11:13:15.645+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2512582.971096039,
+      "rawHex" : "80 32 35",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:16.048+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2512742.008090019,
+      "rawHex" : "90 32 3D",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=31232",
+      "timestamp" : "2026-02-23T11:13:16.207+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2512909.134030342,
+      "rawHex" : "90 34 3E",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=52 v16=31744",
+      "timestamp" : "2026-02-23T11:13:16.375+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2512981.106042862,
+      "rawHex" : "80 32 1B",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:16.447+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2513109.389066696,
+      "rawHex" : "90 35 51",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=53 v16=41610",
+      "timestamp" : "2026-02-23T11:13:16.575+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2513195.45006752,
+      "rawHex" : "80 34 1B",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=52",
+      "timestamp" : "2026-02-23T11:13:16.661+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2513321.0270404816,
+      "rawHex" : "90 37 45",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=55 v16=35368",
+      "timestamp" : "2026-02-23T11:13:16.786+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2513397.4829912186,
+      "rawHex" : "80 35 24",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=53",
+      "timestamp" : "2026-02-23T11:13:16.863+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2513542.559981346,
+      "rawHex" : "80 37 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=55",
+      "timestamp" : "2026-02-23T11:13:17.008+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2555575.8110284805,
+      "rawHex" : "90 32 1A",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=13312",
+      "timestamp" : "2026-02-23T11:13:59.041+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2555624.3550777435,
+      "rawHex" : "90 30 31",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=25088",
+      "timestamp" : "2026-02-23T11:13:59.090+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2555930.9990406036,
+      "rawHex" : "80 30 18",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:13:59.396+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556133.3220005035,
+      "rawHex" : "90 2F 5B",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=47 v16=46811",
+      "timestamp" : "2026-02-23T11:13:59.599+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556151.8189907074,
+      "rawHex" : "80 32 01",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:13:59.617+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556389.911055565,
+      "rawHex" : "90 30 4C",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=48 v16=39009",
+      "timestamp" : "2026-02-23T11:13:59.855+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556551.833987236,
+      "rawHex" : "80 2F 06",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=47",
+      "timestamp" : "2026-02-23T11:14:00.017+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556600.6380319595,
+      "rawHex" : "90 32 3E",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=50 v16=31744",
+      "timestamp" : "2026-02-23T11:14:00.066+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556666.028022766,
+      "rawHex" : "80 30 14",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=48",
+      "timestamp" : "2026-02-23T11:14:00.131+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556822.282075882,
+      "rawHex" : "90 34 49",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=52 v16=37449",
+      "timestamp" : "2026-02-23T11:14:00.288+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556874.258041382,
+      "rawHex" : "80 32 1C",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=50",
+      "timestamp" : "2026-02-23T11:14:00.340+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 2556976.9080877304,
+      "rawHex" : "80 34 40",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=52",
+      "timestamp" : "2026-02-23T11:14:00.442+09:00"
+    }
+  ],
+  "startTime" : "2026-02-23T10:31:23.465+09:00",
+  "version" : 1
+}

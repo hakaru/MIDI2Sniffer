@@ -1,0 +1,336 @@
+{
+  "devices" : [
+    {
+      "name" : "KBD\/CTRL"
+    }
+  ],
+  "endTime" : "2026-02-23T10:31:58.825+09:00",
+  "messages" : [
+    {
+      "category" : "PE",
+      "deltaMs" : 26493.511080741882,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xBEFE77D",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 3,
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 51 14 6E 7D 4E 3F 5F 58 03 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 01 00 01 00 4A 00 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 5D F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET-Reply 0xDC52881->0xBEFE77D reqID=3 chunk=1\/1",
+      "timestamp" : "2026-02-23T10:31:49.959+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 26493.829011917114,
+      "detail" : {
+        "bodyJSON" : "mfr=0x58 fam=26880 model=2305",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0xBEFE77D",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 51 14 6E 7D 4E 3F 5F 58 42 00 00 69 01 09 00 07 00 01 00 08 00 00 01 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "CI DiscoveryReply 0xDC52881->0xBEFE77D mfr=0x58 fam=26880 model=2305",
+      "timestamp" : "2026-02-23T10:31:49.959+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 26493.925094604492,
+      "rawHex" : "F0 7E 7F 0D 30 01 51 14 6E 7D 4E 3F 5F 58 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapInquiry 0xDC52881->0xBEFE77D",
+      "timestamp" : "2026-02-23T10:31:49.959+09:00"
+    },
+    {
+      "category" : "CI",
+      "deltaMs" : 26496.45209312439,
+      "detail" : {
+        "bodyJSON" : "mfr=0x58 fam=26880 model=2305",
+        "ciType" : "DiscoveryReply",
+        "destMUID" : "0xBEFE77D",
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 71 01 51 14 6E 7D 4E 3F 5F 58 42 00 00 69 01 09 00 07 00 01 00 08 00 00 01 00 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "CI DiscoveryReply 0xDC52881->0xBEFE77D mfr=0x58 fam=26880 model=2305",
+      "timestamp" : "2026-02-23T10:31:49.962+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 26496.56903743744,
+      "rawHex" : "F0 7E 7F 0D 30 01 51 14 6E 7D 4E 3F 5F 58 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapInquiry 0xDC52881->0xBEFE77D",
+      "timestamp" : "2026-02-23T10:31:49.962+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 26496.59299850464,
+      "rawHex" : "F0 7E 7F 0D 31 01 51 14 6E 7D 4E 3F 5F 58 01 F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE CapReply 0xDC52881->0xBEFE77D",
+      "timestamp" : "2026-02-23T10:31:49.962+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 26500.14901161194,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xBEFE77D",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 0,
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 51 14 6E 7D 4E 3F 5F 58 00 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 01 00 01 00 4A 00 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 5D F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET-Reply 0xDC52881->0xBEFE77D reqID=0 chunk=1\/1",
+      "timestamp" : "2026-02-23T10:31:49.966+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 26504.92298603058,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xBEFE77D",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 1,
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 51 14 6E 7D 4E 3F 5F 58 01 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 01 00 01 00 4A 00 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 5D F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET-Reply 0xDC52881->0xBEFE77D reqID=1 chunk=1\/1",
+      "timestamp" : "2026-02-23T10:31:49.970+09:00"
+    },
+    {
+      "category" : "PE",
+      "deltaMs" : 26506.285071372986,
+      "detail" : {
+        "bodyJSON" : "[{\"resource\":\"DeviceInfo\"},{\"resource\":\"ChannelList\",\"canSubscribe\":true}]",
+        "ciType" : "PE-GET-Reply",
+        "destMUID" : "0xBEFE77D",
+        "headerJSON" : "{\"status\":200}",
+        "requestID" : 2,
+        "sourceMUID" : "0xDC52881"
+      },
+      "rawHex" : "F0 7E 7F 0D 35 01 51 14 6E 7D 4E 3F 5F 58 02 0E 00 7B 22 73 74 61 74 75 73 22 3A 32 30 30 7D 01 00 01 00 4A 00 5B 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 44 65 76 69 63 65 49 6E 66 6F 22 7D 2C 7B 22 72 65 73 6F 75 72 63 65 22 3A 22 43 68 61 6E 6E 65 6C 4C 69 73 74 22 2C 22 63 61 6E 53 75 62 73 63 72 69 62 65 22 3A 74 72 75 65 7D 5D F7",
+      "source" : "KBD\/CTRL",
+      "summary" : "PE GET-Reply 0xDC52881->0xBEFE77D reqID=2 chunk=1\/1",
+      "timestamp" : "2026-02-23T10:31:49.972+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 29178.03204059601,
+      "rawHex" : "90 29 42",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=41 v16=33808",
+      "timestamp" : "2026-02-23T10:31:52.643+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 29197.70908355713,
+      "rawHex" : "90 2B 2E",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOn ch=0 n=43 v16=23552",
+      "timestamp" : "2026-02-23T10:31:52.663+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 29264.028072357178,
+      "rawHex" : "80 2B 0F",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=43",
+      "timestamp" : "2026-02-23T10:31:52.729+09:00"
+    },
+    {
+      "category" : "Note",
+      "deltaMs" : 29361.649990081787,
+      "rawHex" : "80 29 34",
+      "source" : "KBD\/CTRL",
+      "summary" : "NoteOff ch=0 n=41",
+      "timestamp" : "2026-02-23T10:31:52.827+09:00"
+    },
+    {
+      "category" : "PC",
+      "deltaMs" : 31134.04107093811,
+      "rawHex" : "C0 01",
+      "source" : "KBD\/CTRL",
+      "summary" : "PC ch=0 p=1",
+      "timestamp" : "2026-02-23T10:31:54.599+09:00"
+    },
+    {
+      "category" : "PC",
+      "deltaMs" : 32533.921003341675,
+      "rawHex" : "C0 02",
+      "source" : "KBD\/CTRL",
+      "summary" : "PC ch=0 p=2",
+      "timestamp" : "2026-02-23T10:31:55.999+09:00"
+    },
+    {
+      "category" : "PC",
+      "deltaMs" : 33313.87197971344,
+      "rawHex" : "C0 01",
+      "source" : "KBD\/CTRL",
+      "summary" : "PC ch=0 p=1",
+      "timestamp" : "2026-02-23T10:31:56.779+09:00"
+    },
+    {
+      "category" : "PC",
+      "deltaMs" : 33713.90700340271,
+      "rawHex" : "C0 00",
+      "source" : "KBD\/CTRL",
+      "summary" : "PC ch=0 p=0",
+      "timestamp" : "2026-02-23T10:31:57.179+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 34959.44607257843,
+      "rawHex" : "B0 14 70",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xE1861861",
+      "timestamp" : "2026-02-23T10:31:58.425+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 34969.771027565,
+      "rawHex" : "B0 14 72",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xE5965965",
+      "timestamp" : "2026-02-23T10:31:58.435+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 34979.58207130432,
+      "rawHex" : "B0 14 74",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xE9A69A69",
+      "timestamp" : "2026-02-23T10:31:58.445+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 34989.56799507141,
+      "rawHex" : "B0 14 76",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xEDB6DB6D",
+      "timestamp" : "2026-02-23T10:31:58.455+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 34999.82404708862,
+      "rawHex" : "B0 14 79",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xF3CF3CF3",
+      "timestamp" : "2026-02-23T10:31:58.465+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35009.63509082794,
+      "rawHex" : "B0 14 7B",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xF7DF7DF7",
+      "timestamp" : "2026-02-23T10:31:58.475+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35019.64509487152,
+      "rawHex" : "B0 14 7D",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xFBEFBEFB",
+      "timestamp" : "2026-02-23T10:31:58.485+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35030.0110578537,
+      "rawHex" : "B0 14 7E",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xFDF7DF7D",
+      "timestamp" : "2026-02-23T10:31:58.495+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35039.64006900787,
+      "rawHex" : "B0 14 7F",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xFFFFFFFF",
+      "timestamp" : "2026-02-23T10:31:58.505+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35270.01905441284,
+      "rawHex" : "B0 14 7D",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xFBEFBEFB",
+      "timestamp" : "2026-02-23T10:31:58.735+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35279.68108654022,
+      "rawHex" : "B0 14 7C",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xF9E79E79",
+      "timestamp" : "2026-02-23T10:31:58.745+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35289.847016334534,
+      "rawHex" : "B0 14 7A",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xF5D75D75",
+      "timestamp" : "2026-02-23T10:31:58.755+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35299.620032310486,
+      "rawHex" : "B0 14 76",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xEDB6DB6D",
+      "timestamp" : "2026-02-23T10:31:58.765+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35309.79609489441,
+      "rawHex" : "B0 14 73",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xE79E79E7",
+      "timestamp" : "2026-02-23T10:31:58.775+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35319.612979888916,
+      "rawHex" : "B0 14 70",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xE1861861",
+      "timestamp" : "2026-02-23T10:31:58.785+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35329.6160697937,
+      "rawHex" : "B0 14 6D",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xDB6DB6DB",
+      "timestamp" : "2026-02-23T10:31:58.795+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35339.78605270386,
+      "rawHex" : "B0 14 6A",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xD5555555",
+      "timestamp" : "2026-02-23T10:31:58.805+09:00"
+    },
+    {
+      "category" : "CC",
+      "deltaMs" : 35359.711050987244,
+      "rawHex" : "B0 14 69",
+      "source" : "KBD\/CTRL",
+      "summary" : "CC ch=0 cc=20 v32=0xD34D34D3",
+      "timestamp" : "2026-02-23T10:31:58.825+09:00"
+    }
+  ],
+  "startTime" : "2026-02-23T10:31:23.465+09:00",
+  "version" : 1
+}
