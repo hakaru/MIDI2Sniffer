@@ -54,10 +54,42 @@ Sniffer 起動中に PE 通信をキャプチャすると、KeyStage の表示�
 - **結論: Sniffer のコードは MIDI-CI に一切関与していない**
 - 謎の MUID `0xC3C9C81` は macOS CoreMIDI が OS レベルで自動開始した MIDI-CI セッションの可能性が高い
 
-**次の切り分けテスト:**
-1. Sniffer を起動せず Mac に KeyStage だけ USB 接続 → Module 使用 → macOS CoreMIDI の存在だけで発生するか
-2. iOS 版 Sniffer を作成し iPhone 上で Module + Sniffer → KeyStage → iOS CoreMIDI でも発生するか
-3. 上記で macOS 固有と確定すれば、macOS CoreMIDI の MIDI-CI 自動処理を無効化する方法を調査
+**切り分けテスト結果（2026-02-23）:**
+
+1. **直接 USB 接続（Mac なし）ではハングしない** — Module ↔ KeyStage を直接接続した場合、PE ハンドシェイクは正常に完了する
+2. **Mac を介したルーティングでハングする** — Mac 上の Sniffer で MIDI Through ルーティングを有効にした場合のみ発生
+
+### 調査結論（2026-02-23）
+
+**根本原因: macOS CoreMIDI の自動 MIDI-CI セッション**
+
+macOS CoreMIDI は、MIDI デバイスが USB 接続されると **OS レベルで自動的に Discovery Inquiry を送信し、MIDI-CI セッションを開始する**。これはアプリケーションが MIDI-CI を一切使用していなくても発生する。
+
+Mac を介して Module ↔ KeyStage をルーティングすると:
+1. macOS CoreMIDI が Module と KeyStage それぞれに独自の CI セッションを開始
+2. デバイス間の CI セッション + macOS の CI セッションが並走
+3. PE Reply が重複（Module は macOS + KeyStage の両方からの PE GET に応答）
+4. KeyStage が大量の重複 Reply を処理できずハング
+
+**謎の MUID `0xC3C9C81` の正体:** macOS CoreMIDI が OS レベルで自動開始した MIDI-CI セッションの MUID。
+
+**対策として実装した MUID ブラックリスト方式:**
+- Discovery (0x70) の srcMUID と DiscoveryReply (0x71) の destMUID を macOS MUID として学習
+- ルーティング時、srcMUID または destMUID が macOS MUID に該当する CI メッセージをブロック
+- デバイス間の CI（ブロードキャスト含む）は通過させる
+- 結果: **Note/CC ルーティングは正常動作、ハングは防止。ただし PG/CC 名の PE 取得は構造的に不可能**
+
+**PG/CC 名が取得できない理由:**
+- macOS CoreMIDI が全 CI セッションを仲介しており、デバイス間で独立した PE セッションは確立されない
+- PE Subscribe 通知は届くが、KeyStage が PE GET を送信するのは macOS CoreMIDI の CI セッション経由のみ
+- Mac ベースの MIDI 2.0 音源（M2DX 等）が KeyStage と PE 通信するには、macOS CoreMIDI の CI インフラに正式に登録する必要がある
+
+**macOS CoreMIDI の MIDI-CI API 調査結果:**
+- `MIDICIDevice` / `MIDICIDeviceManager` は読み取り専用（デバイス登録不可）
+- `MIDICIResponder` は macOS 15 で非推奨化
+- `MIDIUMPMutableEndpoint` + `MIDIUMPMutableFunctionBlock` が唯一のデバイス登録手段
+- **Property Exchange の公開 API は macOS 15 時点で存在しない**（Profile Configuration のみ）
+- 詳細は MIDI2Kit の `docs/CoreMIDI-CI-Integration-Proposal.md` に記載
 
 ### キャプチャデータ
 
