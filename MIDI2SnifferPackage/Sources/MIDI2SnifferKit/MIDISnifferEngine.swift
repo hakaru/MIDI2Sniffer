@@ -97,10 +97,14 @@ public actor MIDISnifferEngine {
 
         for destID in destinations {
             let dest = MIDIDestinationID(destID)
-            if !received.umpWords.isEmpty {
-                try? await t.sendUMP(received.umpWords, to: dest)
-            } else {
-                try? await t.send(received.data, to: dest)
+            do {
+                if !received.umpWords.isEmpty {
+                    try await t.sendUMP(received.umpWords, to: dest)
+                } else if !received.data.isEmpty {
+                    try await t.send(received.data, to: dest)
+                }
+            } catch {
+                NSLog("[MIDI2Sniffer] Route forward failed: dest=\(destID) error=\(error)")
             }
         }
     }
