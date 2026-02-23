@@ -59,7 +59,7 @@ struct ToolbarView: ToolbarContent {
             .keyboardShortcut("k", modifiers: .command)
 
             Button {
-                if let data = CaptureSession.export(messages: state.messages, startTime: state.startTime) {
+                if let data = CaptureSession.export(messages: state.filteredMessages, startTime: state.startTime) {
                     exportDocument = CaptureDocument(data: data)
                     isExporting = true
                 }
@@ -68,7 +68,7 @@ struct ToolbarView: ToolbarContent {
             }
             .help("Export to JSON (Cmd+E)")
             .keyboardShortcut("e", modifiers: .command)
-            .disabled(state.messages.isEmpty)
+            .disabled(state.filteredMessages.isEmpty)
         }
 
         ToolbarItem(placement: .status) {
